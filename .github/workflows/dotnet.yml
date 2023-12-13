@@ -60,9 +60,9 @@ jobs:
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
 
-    - name: Move wwwroot content if not main branch
+    - name: Move wwwroot content if not master branch
       run: |
-        if [[ "${{ github.ref_name }}" != "main" ]]; then
+        if [[ "${{ github.ref_name }}" != "master" ]]; then
           mkdir -p release/wwwroot/${{ github.ref_name }}
           mv release/wwwroot/* release/wwwroot/${{ github.ref_name }}/
         fi
