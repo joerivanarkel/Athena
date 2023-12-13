@@ -1,0 +1,76 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET and GitHub Pages
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+
+env:
+  REPOSITORY_NAME: Athena
+  PROJECT_NAME: ./Presentation/Presentation.csproj
+
+jobs:
+  build:
+    name: Build and Test .NET Project
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
+  deploy-to-github-pages:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    steps:    
+    - uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    - name: Publish .NET Core Project
+      run: dotnet publish ${{ env.PROJECT_NAME }} -c Release -o release --nologo
+
+    - name: Change base-tag in index.html from / to ${{ env.REPOSITORY_NAME }}
+      run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPOSITORY_NAME }}\/" \/>/g' release/wwwroot/index.html
+  
+    - name: copy index.html to 404.html
+      run: cp release/wwwroot/index.html release/wwwroot/404.html
+
+    - name: Add .nojekyll file
+      run: touch release/wwwroot/.nojekyll
+
+    - name: Move wwwroot content if not main branch
+      run: |
+        if [[ "${{ github.ref_name }}" != "main" ]]; then
+          mkdir -p release/wwwroot/${{ github.ref_name }}
+          mv release/wwwroot/* release/wwwroot/${{ github.ref_name }}/
+        fi
+
+    - name: Commit wwwroot to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: release/wwwroot
+        CLEAN: false
