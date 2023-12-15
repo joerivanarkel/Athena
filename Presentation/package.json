@@ -1,10 +1,14 @@
 {
   "scripts": {
-    "build:css": "tailwindcss -i ./wwwroot/css/app.css -o ./wwwroot/css/tailwind.css --minify"
+    "build:css": "tailwindcss -i ./wwwroot/css/app.css -o ./wwwroot/css/tailwind.css --minify",
+    "sass" : "sass"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
   }
 }

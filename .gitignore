@@ -476,5 +476,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# TailwindCSS
-tailwind.css
+# SASS
+*.razor.css
+*.razor.css.map
+app.css
+*.css.map
+
+# Node
+node_modules/
+package-lock.json
