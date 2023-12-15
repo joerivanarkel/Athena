@@ -33,6 +33,7 @@ jobs:
         node-version: 14
 
     - name: Install dependencies
+      working-directory: ./Presentation
       run: npm install
 
     - name: Restore dependencies
@@ -62,6 +63,7 @@ jobs:
         node-version: 14
 
     - name: Install dependencies
+      working-directory: ./Presentation
       run: npm install
 
     - name: Publish .NET Core Project
