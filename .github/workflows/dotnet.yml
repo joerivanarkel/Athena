@@ -27,6 +27,14 @@ jobs:
       with:
         dotnet-version: 6.0.x
 
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+
+    - name: Install dependencies
+      run: npm install
+
     - name: Restore dependencies
       run: dotnet restore
 
@@ -47,6 +55,14 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+
+    - name: Install dependencies
+      run: npm install
 
     - name: Publish .NET Core Project
       run: dotnet publish ${{ env.PROJECT_NAME }} -c Release -o release --nologo
