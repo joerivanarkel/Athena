@@ -1,7 +1,7 @@
 {
   "entryAssembly": "Presentation",
   "resources": {
-    "hash": "sha256-KgYSfMUng4aRF1KOzlYmXHFXWHtzq5H6FYAJverw1yg=",
+    "hash": "sha256-P7b9npTO+dot1EL9gx8ooqTlMGM1rjWfNhm9Ya4iXr4=",
     "runtime": {
       "dotnet.7.0.14.mikshhdjmu.js": "sha256-YWGUknGRzP/fgO6YjvCJKPVQNZAPEd6ll+rHfQEIW+I=",
       "dotnet.timezones.blat": "sha256-t5xviiOQTfAsF0UDhmcyalKiaehUmf/sqJl97tmPM0M=",
@@ -11,8 +11,8 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "Microsoft.AspNetCore.Components.dll": "sha256-Pe+vqqIUxNTmo1jhNk1fEeQmDQWeLFcPlbPpmtJka3I=",
-      "Microsoft.AspNetCore.Components.Web.dll": "sha256-LXNdJoDAdnjSWCYbhEnG1vvAy3YBP4/X7l27a3WgTPY=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-8czg6HapxFPqtBy9N8//iGa1M8FfZ8WO/rfayi9PLDg=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-L98k6jLLHkioSvVLzl/IgEYdokOLiE0l285zvsXP4Wc=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-XCOctJUd08gOiPYVc+oS9bvDR1mMNjAxF7kQ69WHPL8=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-X/f4fDl2cuIRXeWHhK/f2UqQbFioD+RU4a4CEh0zrrQ=",
       "Microsoft.Extensions.Configuration.dll": "sha256-DBOKSPriP2JDxVbbWrLXyD3K4/x3RBifNBWk/q1I39M=",
@@ -23,9 +23,10 @@
       "Microsoft.Extensions.Logging.dll": "sha256-RJE660TEC1wm3MyL1EXQfTQB1qK+JWy1efVUxI8nNUo=",
       "Microsoft.Extensions.Options.dll": "sha256-WPBQk7rt2p4aMEo2pTp1sBpsiWdE8MmWuIYq+zl1ceo=",
       "Microsoft.Extensions.Primitives.dll": "sha256-eXvGx2jcjpTPEJoAHBsW/VuMPbNyyU+AsuhPmkzSSRY=",
-      "Microsoft.JSInterop.dll": "sha256-ItOJwPiiU8GcYyhBlqjO8McWwYOiFPTrl7mawLB4kek=",
+      "Microsoft.JSInterop.dll": "sha256-mN9NRjCix+WoB4T5gP2gNXLioxZJp+0st1wi6zcIABc=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-Fibw4jtnMD0se9VIfLv5hPcrbAm7ipCW+RN8CfPIDkY=",
-      "Presentation.dll": "sha256-CBkUhBOU5OktYu1WKU3s0aLcAT0W7blA7pPjH5mEY7U=",
+      "Presentation.Components.dll": "sha256-YSSl8uJYqFEcKIHAHfHVc8XPi40A0j3nmZcdHl4RClU=",
+      "Presentation.dll": "sha256-uXquoJyiaRwpfz3TwzZrPzEUkWaMnEy11sDO9kHmsho=",
       "System.Collections.Concurrent.dll": "sha256-iVVE9O+NcP6iYl4sd/ZeC3urQoyLH9oTiV2umPpI0Ec=",
       "System.Collections.dll": "sha256-fIgnVkPAGfJKc4DkDNq4kXBb+vgd9CLX9C82nFYo0QQ=",
       "System.ComponentModel.dll": "sha256-pGP1Cnq1M/2Hkyb2tJWqyVXzPDBaqoWBi3pBs4L1Cbg=",
