@@ -23,7 +23,9 @@
   </ItemGroup>
 
   <ItemGroup Label="Compile SCSS files">
-    <ComponentScssFiles Include="**/*/*.scss" Exclude="node_modules/**;wwwroot/**;Styles/**" />
+    <ComponentScssFiles 
+      Include="**/*/*.scss;**/*.scss"
+      Exclude="node_modules/**;wwwroot/**;Styles/**" />
   </ItemGroup>
 
 
