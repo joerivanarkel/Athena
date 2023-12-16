@@ -66,6 +66,9 @@ jobs:
     - name: Publish .NET Core Project
       run: dotnet publish -c Release -o release --nologo
 
+    - name: List files
+      run: ls -R
+
     - name: Change base-tag in index.html from / to ${{ env.REPOSITORY_NAME }}
       run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPOSITORY_NAME }}\/" \/>/g' release/wwwroot/index.html
 
