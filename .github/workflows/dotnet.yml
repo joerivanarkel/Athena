@@ -67,10 +67,6 @@ jobs:
     - name: Publish .NET Core Project
       run: dotnet publish ${{ env.PROJECT_NAME }} -c Release -o release --nologo
 
-    
-    - name: Filetree of release folder
-      run: tree release
-
     - name: Change base-tag in index.html from / to ${{ env.REPOSITORY_NAME }}
       run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPOSITORY_NAME }}\/" \/>/g' release/wwwroot/index.html
 
@@ -80,17 +76,9 @@ jobs:
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
 
-    - name: Move wwwroot content if not master branch
-      run: |
-        if [[ "${{ github.ref_name }}" != "master" ]]; then
-          mkdir -p release/wwwroot/${{ github.ref_name }}
-          mv release/wwwroot/* release/wwwroot/${{ github.ref_name }}/
-        fi
-
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
         BRANCH: gh-pages
         FOLDER: release/wwwroot
-        CLEAN: false

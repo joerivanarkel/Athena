@@ -5,7 +5,7 @@
 In this project we use SASS for styling. SASS is a CSS preprocessor that allows us to use variables, mixins, functions, and more, 
 all with a fully CSS-compatible syntax. We combined this with TailwindCSS, a utility-first CSS framework for rapidly building custom designs. We are able to use them with the help of this MSBuild task:
 
-In the Presentation project this task is used to compile the Global SCSS file and the Component SCSS files. The Global SCSS file is located in the `Styles` folder and the Component SCSS. For a Razor Class Library, only the Component SCSS files are compiled.
+In the Presentation project this task is used to compile the Global SCSS file and the Component SCSS files. The Global SCSS file is located in the `Styles` folder and the Component SCSS. For a Razor Class Library, only the Global SCSS file is compiled. This is because there is an issue with the GitHub Actions workflow that prevents the Component SCSS files from being compiled.
 
 ```xml
   <ItemGroup Label="Compile SCSS files">
@@ -44,5 +44,5 @@ To include the SCSS files in the `dotnet watch` command, you need to add the fol
 In order to use the SASS files from a Razor Class Library, you need to add the following stylesheets to your `index.html` file:
 
 ```html
-<link href="_content/YourClassLib/YourClassLib.bundle.scp.css" rel="stylesheet">
+<link href="_content/YourClassLib/css/YourClassLib.css" rel="stylesheet" />
 ```
