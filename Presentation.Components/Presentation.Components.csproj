@@ -27,12 +27,12 @@
   </ItemGroup>
 
 
-  <Target Name="CompileComponentSass" BeforeTargets="Compile">
-    <Message Text="Compiling Component SCSS files" Importance="high" />
+  <Target Name="CompileGlobalSass" BeforeTargets="Compile">
+    <Message Text="Compiling global SCSS file" Importance="high" />
     <Exec
-      Condition="!$([System.Text.RegularExpressions.Regex]::IsMatch('%(ComponentScssFiles.Identity)', `.*[/\\]_.*`))"
-      Command="npm run sass -- --style=compressed --no-source-map --load-path=Presentation/Styles/Core $(MSBuildProjectName)/%(ComponentScssFiles.Identity) $(MSBuildProjectName)/%(relativedir)%(filename).css" />
+      Command="npm run sass -- --style=compressed $(MSBuildProjectName)/Styles:$(MSBuildProjectName)/wwwroot/css" />
   </Target>
+
   
 
 </Project>

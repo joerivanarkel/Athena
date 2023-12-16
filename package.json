@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "sass" : "sass"
+    "sass": "sass --load-path=node_modules"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",

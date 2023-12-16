@@ -1,8 +1,8 @@
 @import"open-iconic/font/css/open-iconic-bootstrap.min.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @import"Core/app-variables";
 
@@ -59,7 +59,7 @@ a,
     padding: .6rem 1.25rem .7rem 1.25rem;
     position: fixed;
     width: 100%;
-    z-index: 1000
+    z-index: 1000;
 }
 
 #blazor-error-ui .dismiss {
