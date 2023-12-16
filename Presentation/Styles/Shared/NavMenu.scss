@@ -6,17 +6,24 @@ $font-size: 1.1rem;
 $small-font-size: 0.9rem;
 $navbar-height: 3.5rem;
 
-.navbar-toggler {
-    background-color: $light;
+.navbar {
+    &-toggler {
+        background-color: $light;
+
+        @media (min-width: 641px) {
+            display: none;
+        }
+    }
+
+    &-brand {
+        font-size: $font-size;
+    }
 }
+
 
 .top-row {
     height: $navbar-height;
     background-color: $dark;
-}
-
-.navbar-brand {
-    font-size: $font-size;
 }
 
 .oi {
@@ -43,6 +50,7 @@ $navbar-height: 3.5rem;
         border-radius: 4px;
         height: 3rem;
         display: flex;
+        visibility: visible !important;
         align-items: center;
         line-height: 3rem;
 
@@ -56,13 +64,12 @@ $navbar-height: 3.5rem;
             color: $white;
         }
     }
+
+    
+
 }
 
 @media (min-width: 641px) {
-    .navbar-toggler {
-        display: none;
-    }
-
     .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block !important;
@@ -73,5 +80,12 @@ $navbar-height: 3.5rem;
         /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - $navbar-height);
         overflow-y: auto;
+    }
+}
+
+@media (max-width: 640.98px) {
+    .collapse {
+        /* Always collapse the sidebar for narrow screens */
+        visibility: visible !important;
     }
 }
