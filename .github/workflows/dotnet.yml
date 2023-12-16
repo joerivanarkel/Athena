@@ -33,7 +33,6 @@ jobs:
         node-version: 14
 
     - name: Install dependencies
-      working-directory: ./Presentation
       run: npm install
 
     - name: Restore dependencies
@@ -63,15 +62,14 @@ jobs:
         node-version: 14
 
     - name: Install dependencies
-      working-directory: ./Presentation
       run: npm install
 
     - name: Publish .NET Core Project
       run: dotnet publish ${{ env.PROJECT_NAME }} -c Release -o release --nologo
 
     - name: Change base-tag in index.html from / to ${{ env.REPOSITORY_NAME }}
-      run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPOSITORY_NAME }}\/" \/>/g' release/wwwroot/index.html
-  
+      run: sed -i 's|<base href="./" />|<base href="./${{ env.REPOSITORY_NAME }}/" />|g' release/wwwroot/index.html
+
     - name: copy index.html to 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
 

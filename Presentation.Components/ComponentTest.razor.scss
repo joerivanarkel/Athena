@@ -1,17 +1,19 @@
+$text-color: #f00;
+
 .my-component {
     background-color: #eee;
     border: 1px solid #ccc;
     padding: 10px;
 
     button {
-        background-color: #f00;
+        background-color: $text-color;
         color: #fff;
-        border: 1px solid #f00;
+        border: 1px solid $text-color;
         cursor: pointer;
     }
 
     strong {
         font-weight: bold;
-        color: #f00;
+        color: $text-color;
     }
 }
