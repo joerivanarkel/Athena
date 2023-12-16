@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.14" />
+  </ItemGroup>
+
+  <ItemGroup Label="Add SCSS files to dotnet watch">
+    <Watch Include="**\*.scss" />
+    <None Update="**\*.css" watch="false" />
+  </ItemGroup>
+
+  <ItemGroup Label="Compile SCSS files">
+    <ComponentScssFiles 
+      Include="**/*/*.scss;**/*.scss"
+      Exclude="node_modules/**;wwwroot/**;Styles/**" />
+  </ItemGroup>
+
+
+  <Target Name="CompileComponentSass" BeforeTargets="Compile">
+    <Message Text="Compiling Component SCSS files" Importance="high" />
+    <Exec
+      Condition="!$([System.Text.RegularExpressions.Regex]::IsMatch('%(ComponentScssFiles.Identity)', `.*[/\\]_.*`))"
+      Command="npm run sass -- --style=compressed --no-source-map --load-path=Presentation/Styles/Core $(MSBuildProjectName)/%(ComponentScssFiles.Identity) $(MSBuildProjectName)/%(relativedir)%(filename).css" />
+  </Target>
+  
+
+</Project>

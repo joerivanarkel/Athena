@@ -1,6 +1,6 @@
 {
-    "files.exclude": {
-      "**/*.razor.css": true,
-      "**/*.razor.css.map": true
-    }
+  //   "files.exclude": {
+  //     "**/*.razor.css": true,
+  //     "**/*.razor.css.map": true
+  //   }
   }

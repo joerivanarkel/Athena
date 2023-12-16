@@ -1,0 +1,17 @@
+.my-component {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px;
+
+    button {
+        background-color: #f00;
+        color: #fff;
+        border: 1px solid #f00;
+        cursor: pointer;
+    }
+
+    strong {
+        font-weight: bold;
+        color: #f00;
+    }
+}

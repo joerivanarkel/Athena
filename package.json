@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "build:css": "tailwindcss -i ./wwwroot/css/app.css -o ./wwwroot/css/tailwind.css --minify",
     "sass" : "sass"
   },
   "dependencies": {
