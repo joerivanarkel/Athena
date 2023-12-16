@@ -11,6 +11,7 @@ on:
 
 env:
   REPOSITORY_NAME: Athena
+  PROJECT_NAME: ./Presentation/Presentation.csproj
 
 jobs:
   build:
@@ -64,10 +65,7 @@ jobs:
       run: npm install
 
     - name: Publish .NET Core Project
-      run: dotnet publish -c Release -o release --nologo
-
-    - name: List files
-      run: ls -R
+      run: dotnet publish ${{ env.PROJECT_NAME }} -c Release -o release --nologo
 
     - name: Change base-tag in index.html from / to ${{ env.REPOSITORY_NAME }}
       run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPOSITORY_NAME }}\/" \/>/g' release/wwwroot/index.html
