@@ -1,0 +1,77 @@
+$white: #fff;
+$dark: rgba(0, 0, 0, 0.4);
+$light: rgba(255, 255, 255, 0.1);
+$light-active: rgba(255, 255, 255, 0.25);
+$font-size: 1.1rem;
+$small-font-size: 0.9rem;
+$navbar-height: 3.5rem;
+
+.navbar-toggler {
+    background-color: $light;
+}
+
+.top-row {
+    height: $navbar-height;
+    background-color: $dark;
+}
+
+.navbar-brand {
+    font-size: $font-size;
+}
+
+.oi {
+    width: 2rem;
+    font-size: $font-size;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item {
+    font-size: $small-font-size;
+    padding-bottom: 0.5rem;
+
+    &:first-of-type {
+        padding-top: 1rem;
+    }
+
+    &:last-of-type {
+        padding-bottom: 1rem;
+    }
+
+    a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+
+        &.active {
+            background-color: $light-active;
+            color: $white;
+        }
+
+        &:hover {
+            background-color: $light;
+            color: $white;
+        }
+    }
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .collapse {
+        /* Never collapse the sidebar for wide screens */
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .nav-scrollable {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - $navbar-height);
+        overflow-y: auto;
+    }
+}

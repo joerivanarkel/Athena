@@ -28,17 +28,13 @@
       Exclude="node_modules/**;wwwroot/**;Styles/**" />
   </ItemGroup>
 
-
-  <Target Name="CompileComponentSass" BeforeTargets="CompileGlobalSass">
-    <Message Text="Compiling Component SCSS files" Importance="high" />
-    <Exec
-      Condition="!$([System.Text.RegularExpressions.Regex]::IsMatch('%(ComponentScssFiles.Identity)', `.*[/\\]_.*`))"
-      Command="npm run sass -- --style=compressed --no-source-map --load-path=$(MSBuildProjectName)/Styles/Core $(MSBuildProjectName)/%(ComponentScssFiles.Identity) $(MSBuildProjectName)/%(relativedir)%(filename).css" />
-  </Target>
-
   <Target Name="CompileGlobalSass" BeforeTargets="Compile">
     <Message Text="Compiling global SCSS file" Importance="high" />
     <Exec
       Command="npm run sass -- --style=compressed $(MSBuildProjectName)/Styles:$(MSBuildProjectName)/wwwroot/css" />
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="CompileGlobalSass">
+    <Exec Command="npm run build:css" />
   </Target>
 </Project>

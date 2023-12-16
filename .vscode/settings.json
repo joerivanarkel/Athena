@@ -1,6 +1,15 @@
 {
-  //   "files.exclude": {
-  //     "**/*.razor.css": true,
-  //     "**/*.razor.css.map": true
-  //   }
-  }
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true
+  },
+  "explorer.fileNesting.patterns": {
+    "Cargo.toml": "Cargo.lock",
+    "package.json": "package-lock.json",
+    "appsettings.json": "appsettings.Development.json",
+    "*.razor": "${basename}.razor.*",
+    "*.css": "${basename}.css.map",
+    
+  },
+  "explorer.fileNesting.expand": false,
+}
