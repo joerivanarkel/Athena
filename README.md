@@ -2,6 +2,8 @@
 
 ## Styling / SCSS
 
+// Slightly Outdated
+
 In this project we use SASS for styling. SASS is a CSS preprocessor that allows us to use variables, mixins, functions, and more, 
 all with a fully CSS-compatible syntax. We combined this with TailwindCSS, a utility-first CSS framework for rapidly building custom designs. We are able to use them with the help of this MSBuild task:
 
