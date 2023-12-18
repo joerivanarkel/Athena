@@ -1,7 +1,116 @@
 @page "/V1Page"
 
-@using Presentation.Components.WikiPage
+@using Presentation.Components.Wrapper
 
 <TopContainer>
-    
+    <ColumnLeft>
+        <ArticleContainer>
+            <ArticleTitle title="V1" />
+            <ArticleContent>
+                <Paragraph>
+                    The <strong>Eiffel Tower</strong> (<IPAOption Language="French" Text="Tour Eiffel" IPA="tuʁ‿ɛfɛl" />) is a
+                    wrought-iron lattice
+                    tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel,
+                    whose
+                    company designed and built the tower.
+                </Paragraph>
+
+                <Paragraph Title="Design and construction">
+                    Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was initially
+                    criticized by
+                    some of France's leading artists and intellectuals for its design, but it has become a
+                    global cultural
+                    icon of France and one of the most recognisable structures in the world.
+                </Paragraph>
+
+                <Paragraph Title="Table">
+                    The Eiffel Tower is made of iron and weighs around 10,000 tonnes. It stands at a height of
+                    330 meters
+                    and was the tallest man-made structure in the world until the completion of the Chrysler
+                    Building in New
+                    York in 1930.
+                    <ArticleTable Title="Table Title">
+                        <TableHeaders>
+                            <TableHeader>Header 1</TableHeader>
+                            <TableHeader>Header 2</TableHeader>
+                            <TableHeader>Header 3</TableHeader>
+                        </TableHeaders>
+                        <TableRows>
+                            <TableRow>
+                                <TableDrawer>Data 1</TableDrawer>
+                                <TableDrawer>Data 2</TableDrawer>
+                                <TableDrawer>Data 3</TableDrawer>
+                            </TableRow>
+                            <TableRow>
+                                <TableDrawer>Data 4</TableDrawer>
+                                <TableDrawer>Data 5</TableDrawer>
+                                <TableDrawer>Data 6</TableDrawer>
+                            </TableRow>
+                            <TableRow>
+                                <TableDrawer>Data 7</TableDrawer>
+                                <TableDrawer>Data 8</TableDrawer>
+                                <TableDrawer>Data 9</TableDrawer>
+                            </TableRow>
+                        </TableRows>
+                    </ArticleTable>
+                </Paragraph>
+
+                <Paragraph Title="Related Articles">
+
+                </Paragraph>
+
+                <RelatedArticles>
+                    <RelatedArticleLink Text="The Construction of the Eiffel Tower" Link="" />
+                    <RelatedArticleLink Text="The Eiffel Tower: A Symbol of Modernity" Link="" />
+                    <RelatedArticleLink Text="The Eiffel Tower and Its Impact on French Culture" Link="" />
+                </RelatedArticles>
+
+            </ArticleContent>
+        </ArticleContainer>
+        <ReferenceSection>
+            <ReferenceLink Href="">
+                Eiffel, G. (1890). The Eiffel Tower. Paris: Eiffel.
+            </ReferenceLink>
+            <ReferenceLink Href="">
+                Harriss, J. (1985). The Tallest Tower: Eiffel and the Belle Epoque. Boston: Houghton Mifflin.
+            </ReferenceLink>
+            <ReferenceLink Href="">
+                Loyrette, H. (1985). Gustave Eiffel. New York: Rizzoli.
+            </ReferenceLink>
+        </ReferenceSection>
+    </ColumnLeft>
+
+    <ColumnRight>
+        <Infobox>
+            <InfoboxTitle title="Infobox Title">
+                <LanguageOption Name="Tour Eiffel" Language="French" />
+            </InfoboxTitle>
+            <InfoboxDetails>
+                <Image>
+                    <img alt="Eiffel Tower" class="mb-4 w-full" height="200" src="/placeholder.svg" width="200" style="aspect-ratio: 200 / 200; object-fit: cover;" />
+                </Image>
+                <ChildContent>
+                    <InfoboxDetailCell
+                        Item="Location:"
+                        Value="Paris, France"
+                    />
+                    <InfoboxDetailCell
+                        Item="Height:"
+                        Value="330 meters"
+                    />
+                    <InfoboxDetailCell
+                        Item="Construction:"
+                        Value="1887-1889"
+                    />
+                </ChildContent>
+            </InfoboxDetails>
+        </Infobox>
+
+        <TableOfContents>
+            <HeaderLink Value="Introduction" Href="introduction" />
+            <HeaderLink Value="Design and construction" Href="design-and-construction" />
+            <HeaderLink Value="Table" Href="table" />
+            <HeaderLink Value="Related Articles" Href="related-articles" />
+        </TableOfContents>
+    </ColumnRight>
 </TopContainer>

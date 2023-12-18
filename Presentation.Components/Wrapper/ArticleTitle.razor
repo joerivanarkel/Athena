@@ -1,0 +1,19 @@
+<div class="flex flex-col space-y-1.5 bg-gray-100 border-b border-gray-200 p-4">
+    <h3 class="tracking-tight text-3xl font-semibold text-gray-700">
+        @Title
+    </h3>
+    <div class="flex mt-2 space-x-4">
+        <a class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-md text-gray-700" href="#">
+            Article
+        </a>
+        <a class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-md text-gray-700" href="#">
+            History
+        </a>
+    </div>
+</div>
+
+@code
+{
+    [Parameter]
+    public string Title { get; set; } = "Title Unknown";
+}

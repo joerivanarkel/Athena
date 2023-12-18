@@ -1,0 +1,8 @@
+<div class="w-full md:w-1/4">
+    @ChildContent
+</div>
+
+@code {
+    [ParameterAttribute]
+    public RenderFragment ChildContent { get; set; }
+}

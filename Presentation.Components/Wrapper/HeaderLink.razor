@@ -1,0 +1,10 @@
+<li>
+    <a class="text-blue-500" href="#@Href">
+        @Value
+    </a>
+</li>
+
+@code {
+    [Parameter] public string Value { get; set; }
+    [Parameter] public string Href { get; set; }
+}

@@ -1,0 +1,26 @@
+@if (!string.IsNullOrEmpty(Title))
+{
+    <h2 class="text-xl font-semibold text-gray-700 mb-2">
+        @Title
+    </h2>
+}
+
+<table>
+    <thead>
+        <tr>
+            @TableHeaders
+        </tr>
+    </thead>
+    <tbody>
+        @TableRows
+    </tbody>
+</table>
+
+@code {
+    [Parameter]
+    public string? Title { get; set; }
+    [Parameter]
+    public RenderFragment TableHeaders { get; set; }
+    [Parameter]
+    public RenderFragment TableRows { get; set; }
+}
