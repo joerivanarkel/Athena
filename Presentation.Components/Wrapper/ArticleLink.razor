@@ -1,0 +1,10 @@
+﻿<a class="text-blue-500" href="@Href">
+    @ChildContent
+</a>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    public string Href { get; set; }
+}

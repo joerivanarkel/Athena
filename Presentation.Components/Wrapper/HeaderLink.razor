@@ -1,5 +1,7 @@
+@inject NavigationManager NavigationManager
+
 <li>
-    <a class="text-blue-500" href="#@Href">
+    <a class="text-blue-500" href="@($"{GetBaseUri()}#{Href}")">
         @Value
     </a>
 </li>
@@ -7,4 +9,11 @@
 @code {
     [Parameter] public string Value { get; set; }
     [Parameter] public string Href { get; set; }
+
+    private string GetBaseUri()
+    {
+        var relativeUri = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+        var hashIndex = relativeUri.IndexOf('#');
+        return hashIndex >= 0 ? relativeUri.Substring(0, hashIndex) : relativeUri;
+    }
 }
