@@ -14,6 +14,7 @@
 
   <ItemGroup Label="Project References">
     <ProjectReference Include="..\Presentation.Components\Presentation.Components.csproj" />
+    <ProjectReference Include="..\Athena.Content\Athena.Content.csproj" />
   </ItemGroup>
 
 

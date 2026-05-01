@@ -1,0 +1,82 @@
+@page "/article/{ArticleId}"
+
+@using Athena.Content.Models
+@using Athena.Content.Services
+@using Presentation.Components.Wrapper
+
+@inject IArticleService ArticleService
+
+@if (_article is null)
+{
+    <p>Article not found.</p>
+}
+else
+{
+    <TopContainer>
+        <ColumnLeft>
+            <ArticleContainer>
+                <ArticleTitle title="@_article.Title" />
+                <ArticleContent>
+                    @foreach (var articleSection in _article.Sections)
+                    {
+                        <Paragraph Title="@articleSection.Title">@((MarkupString)articleSection.Body)</Paragraph>
+                    }
+                    @if (_article.RelatedArticles.Count > 0)
+                    {
+                        <Paragraph Title="Related Articles">
+                            <RelatedArticles>
+                                @foreach (var link in _article.RelatedArticles)
+                                {
+                                    <RelatedArticleLink Text="@link.Text" Link="@link.Link" />
+                                }
+                            </RelatedArticles>
+                        </Paragraph>
+                    }
+                </ArticleContent>
+            </ArticleContainer>
+        </ColumnLeft>
+        <ColumnRight>
+            @if (_article.Infobox is not null)
+            {
+                <Infobox>
+                    <InfoboxTitle title="@_article.Infobox.Title">
+                        @foreach (var lang in _article.Infobox.LanguageNames)
+                        {
+                            <LanguageOption Name="@lang.Name" Language="@lang.Language" />
+                        }
+                    </InfoboxTitle>
+                    <InfoboxDetails>
+                        <ChildContent>
+                            @foreach (var detail in _article.Infobox.Details)
+                            {
+                                <InfoboxDetailCell Item="@detail.Item" Value="@detail.Value" />
+                            }
+                        </ChildContent>
+                    </InfoboxDetails>
+                </Infobox>
+            }
+            @if (_article.Sections.Any(s => s.Title is not null))
+            {
+                <TableOfContents>
+                    @foreach (var articleSection in _article.Sections.Where(s => s.Title is not null))
+                    {
+                        var sectionTitle = articleSection.Title!;
+                        <HeaderLink Value="@sectionTitle" Href="@ToAnchor(sectionTitle)" />
+                    }
+                </TableOfContents>
+            }
+        </ColumnRight>
+    </TopContainer>
+}
+
+@code {
+    [Parameter] public string ArticleId { get; set; } = "";
+
+    private Article? _article;
+
+    protected override async Task OnParametersSetAsync()
+        => _article = await ArticleService.GetAsync(ArticleId);
+
+    private static string ToAnchor(string title)
+        => title.ToLowerInvariant().Replace(' ', '-');
+}
