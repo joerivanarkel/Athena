@@ -1,19 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup Label="Package References">
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer"
-      Version="7.0.9" PrivateAssets="all" />
+      Version="10.0.5" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup Label="Project References">
     <ProjectReference Include="..\Presentation.Components\Presentation.Components.csproj" />
+    <ProjectReference Include="..\Athena.Content\Athena.Content.csproj" />
   </ItemGroup>
 
 
