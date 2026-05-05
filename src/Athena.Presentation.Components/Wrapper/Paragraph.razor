@@ -1,16 +1,23 @@
 @if (!string.IsNullOrEmpty(Title))
 {
-    <h2 class="text-xl font-semibold text-gray-700 mb-2">
-        @Title
-    </h2>
+    @if (Level >= 2)
+    {
+        <h3 class="sub" id="@SluggedTitle">@Title</h3>
+    }
+    else
+    {
+        <h2 class="section" id="@SluggedTitle">@Title</h2>
+    }
 }
-<p class="mb-4">
-    @ChildContent
-</p>
+@ChildContent
 
 @code {
     [Parameter]
-    public RenderFragment ChildContent { get; set; }
+    public RenderFragment? ChildContent { get; set; }
     [Parameter]
     public string? Title { get; set; }
+    [Parameter]
+    public int Level { get; set; } = 1;
+
+    private string SluggedTitle => Title?.ToLowerInvariant().Replace(' ', '-') ?? "";
 }

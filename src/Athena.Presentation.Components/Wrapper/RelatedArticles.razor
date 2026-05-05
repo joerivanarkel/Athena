@@ -1,6 +1,9 @@
-<ul class="list-disc pl-5">
-    @ChildContent
-</ul>
+<div class="see-also">
+    <h2>See also</h2>
+    <div class="cards">
+        @ChildContent
+    </div>
+</div>
 
 @code {
     [Parameter] public RenderFragment ChildContent { get; set; }
