@@ -19,6 +19,10 @@ public static class AthenaParser
     private static readonly Regex ObsidianCommentPattern =
         new(@"%%[^%]*%%", RegexOptions.Singleline);
 
+    // Strips Obsidian ![[embed]] syntax (images, transclusions) not supported by the SSG.
+    private static readonly Regex ObsidianEmbedPattern =
+        new(@"!\[\[[^\]]*\]\]", RegexOptions.None);
+
     private static readonly Regex HeadingPattern =
         new(@"^(?<hashes>#{1,3})\s+(?<title>.+)$", RegexOptions.Multiline);
 
@@ -34,6 +38,7 @@ public static class AthenaParser
         var meta = ParseFrontmatter(frontmatter);
 
         body = ObsidianCommentPattern.Replace(body, string.Empty);
+        body = ObsidianEmbedPattern.Replace(body, string.Empty);
 
         var footnotes = ExtractFootnotes(ref body);
         var sections = BuildSectionTree(body);
