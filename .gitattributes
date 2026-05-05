@@ -1,1 +1,5 @@
 *.yml linguist-detectable=true
+
+*.athena linguist-detectable=true
+*.athena linguist-documentation=true
+*.athena linguist-language=Markdown
