@@ -1,12 +1,12 @@
 # Layout Components
 
-Top-level responsive layout primitives. These establish the two-column grid used on article pages.
+Top-level layout primitives that establish the two-column grid used on article pages.
 
 ---
 
 ## TopContainer
 
-Outer flex container. Stacks vertically on mobile, side-by-side (`md:flex-row`) on medium+ screens.
+Outer grid container. Renders `<div class="content-wrap">` — a CSS grid with a main content column and a fixed-width rail column. Collapses to a single column below 860 px.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -23,7 +23,7 @@ Outer flex container. Stacks vertically on mobile, side-by-side (`md:flex-row`) 
 
 ## ColumnLeft
 
-Main content column. Takes 3/4 width on `md+`, full width on mobile.
+Main content column. Renders as `<article>` — takes the remaining grid width after the rail. Collapses to full width on narrow viewports.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -33,8 +33,8 @@ Main content column. Takes 3/4 width on `md+`, full width on mobile.
 
 ## ColumnRight
 
-Sidebar column. Takes 1/4 width on `md+`, full width on mobile. Hosts `Infobox` and `TableOfContents`.
+Rail column. Renders as `<aside class="rail">` — a flex column, 300 px wide (260 px on mid-size viewports). Hosts `Infobox` and `TableOfContents`.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `ChildContent` | `RenderFragment` | Yes | Sidebar content |
+| `ChildContent` | `RenderFragment` | Yes | Rail content |

@@ -1,12 +1,12 @@
 # Infobox Components
 
-Components for the right-column summary card. Maps to the `[!infobox]` callout pattern in Obsidian.
+Components for the right-rail summary card. Maps to the `infobox:` block in `.athena` frontmatter.
 
 ---
 
 ## Infobox
 
-Outer card container for the infobox.
+Outer container. Renders `<div class="infobox">` with a 2 px top border in ink color.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -29,31 +29,34 @@ Outer card container for the infobox.
 
 ## InfoboxTitle
 
-Header section of the infobox. Shows the title and optional language name variants below it.
+Renders the entity name and optional alternate-language names.
+
+- `Title` → `<div class="ib-name">` in large serif
+- `ChildContent` → `<div class="ib-alt">` in italic, muted color (omitted when empty)
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `Title` | `string` | Yes | Primary title text |
-| `ChildContent` | `RenderFragment` | No | Language options (`LanguageOption` components) |
+| `Title` | `string` | Yes | Primary name |
+| `ChildContent` | `RenderFragment` | No | Language name variants (`LanguageOption` components) |
 
 ---
 
 ## InfoboxDetails
 
-Body section of the infobox. Renders an optional image and a detail table.
+Renders an optional image followed by a `<dl>` grid of key/value rows.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `ChildContent` | `RenderFragment` | Yes | Detail rows (`InfoboxDetailCell` components) |
-| `Image` | `RenderFragment` | No | Image slot (renders above the detail table) |
+| `ChildContent` | `RenderFragment` | Yes | `InfoboxDetailCell` rows |
+| `Image` | `RenderFragment` | No | Image rendered above the `<dl>` |
 
 ---
 
 ## InfoboxDetailCell
 
-A single key/value row inside `InfoboxDetails`.
+A single row in the infobox `<dl>`. Renders `<dt>` (label) and `<dd>` (value) as adjacent grid cells.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `Item` | `string` | Yes | Row label (left column) |
-| `Value` | `string` | Yes | Row value (right column); supports inline HTML |
+| `Item` | `string` | Yes | Row label — rendered in small-caps sans-serif |
+| `Value` | `string` | Yes | Row value; supports inline HTML (e.g. `<ul>` for multiple titles) |

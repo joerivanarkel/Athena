@@ -80,6 +80,38 @@ article p {
 article em { font-style: italic; }
 article strong { font-weight: 600; }
 
+/* ─── ARTICLE PROSE ──────────────────────────── */
+article ul,
+article ol {
+  margin: 0 0 16px 0;
+  padding-left: 1.6em;
+  max-width: 66ch;
+}
+
+article ul { list-style: disc; }
+article ol { list-style: decimal; }
+
+article li {
+  margin-bottom: 5px;
+  line-height: 1.55;
+}
+
+article li:last-child { margin-bottom: 0; }
+
+article blockquote {
+  margin: 24px 0;
+  padding: 0 0 0 20px;
+  border-left: 2px solid var(--rule);
+  font-style: italic;
+  color: var(--ink-2);
+}
+
+article hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 36px 0;
+}
+
 /* ─── SECTION HEADINGS ───────────────────────── */
 article { counter-reset: section; }
 
@@ -112,7 +144,9 @@ h2.section::before {
   flex-shrink: 0;
 }
 
-h2.section + p { margin-top: 20px; }
+h2.section + p,
+h2.section + ul,
+h2.section + ol { margin-top: 20px; }
 
 h3.sub {
   font-family: var(--serif);
@@ -122,15 +156,16 @@ h3.sub {
   font-style: italic;
 }
 
+h3.sub + p,
+h3.sub + ul,
+h3.sub + ol { margin-top: 0; }
+
 /* ─── TABLES ─────────────────────────────────── */
 article table {
-  width: 100%;
   border-collapse: collapse;
   font-size: clamp(14px, 1vw, 16px);
-  min-width: 300px;
+  width: 100%;
   margin: 16px 0 24px;
-  overflow-x: auto;
-  display: block;
 }
 
 article table thead th {
@@ -152,6 +187,13 @@ article table tbody td {
 }
 
 article table tbody tr:last-child td { border-bottom: 0; }
+
+/* Scrollable wrapper so narrow screens can see wide tables */
+article table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
 
 /* ─── RAIL ───────────────────────────────────── */
 aside.rail {
@@ -218,6 +260,14 @@ aside.rail {
 }
 
 .infobox dd { color: var(--ink); }
+
+/* nested lists inside dd (e.g. multiple titles) */
+.infobox dd ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.infobox dd li { margin: 0; line-height: 1.5; }
 
 /* remove bottom border from last row */
 .infobox dl > dt:last-of-type,
@@ -291,7 +341,6 @@ aside.rail {
   margin-bottom: 16px;
   border-bottom: none;
   padding-bottom: 0;
-  counter-increment: none;
   display: block;
 }
 
@@ -390,7 +439,9 @@ aside.rail {
 
 @media (max-width: 600px) {
   .content-wrap { padding: 24px 18px 72px; gap: 24px; }
-  article p { max-width: 100%; }
+  article p,
+  article ul,
+  article ol { max-width: 100%; }
 }
 
 /* ─── INDEX PAGE ─────────────────────────────── */
