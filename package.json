@@ -1,7 +1,10 @@
 {
   "scripts": {
     "sass": "sass --load-path=node_modules",
-    "build:css": "tailwindcss -i ./Presentation/wwwroot/css/app.css -o ./Presentation/wwwroot/css/app.css --minify"
+    "sass:ssg": "sass --load-path=node_modules --style=compressed src/Athena.Ssg/Styles:src/Athena.Ssg/wwwroot/css",
+    "sass:components": "sass --load-path=node_modules --style=compressed src/Athena.Presentation.Components/Styles:src/Athena.Presentation.Components/wwwroot/css",
+    "build:css": "tailwindcss -i ./src/Athena.Ssg/wwwroot/css/app.css -o ./src/Athena.Ssg/wwwroot/css/app.css --minify",
+    "build:styles": "npm run sass:ssg && npm run sass:components && npm run build:css"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",

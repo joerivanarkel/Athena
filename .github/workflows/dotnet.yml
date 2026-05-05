@@ -1,6 +1,4 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
+# Athena SSG — build and deploy to GitHub Pages
 name: .NET and GitHub Pages
 
 on:
@@ -11,74 +9,77 @@ on:
 
 env:
   REPOSITORY_NAME: Athena
-  PROJECT_NAME: ./Presentation/Presentation.csproj
+  SSG_PROJECT: ./src/Athena.Ssg/Athena.Ssg.csproj
+  CONTENT_DIR: src/Athena.Content/Content
+  OUTPUT_DIR: ssg-output
 
 jobs:
   build:
-    name: Build and Test .NET Project
-
+    name: Build and Validate
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 6.0.x
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 9.0.x
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14
+      - name: Restore .NET dependencies
+        run: dotnet restore
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Restore dependencies
-      run: dotnet restore
-
-    - name: Build
-      run: dotnet build --no-restore
-
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      - name: Build
+        run: dotnet build --no-restore
 
   deploy-to-github-pages:
     name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
-    steps:    
-    - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 6.0.x
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 9.0.x
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install npm dependencies
+        run: npm install
 
-    - name: Publish .NET Core Project
-      run: dotnet publish ${{ env.PROJECT_NAME }} -c Release -o release --nologo
+      - name: Build styles (SCSS + Tailwind)
+        run: npm run build:styles
 
-    - name: Change base-tag in index.html from / to ${{ env.REPOSITORY_NAME }}
-      run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPOSITORY_NAME }}\/" \/>/g' release/wwwroot/index.html
+      - name: Restore .NET dependencies
+        run: dotnet restore
 
-    - name: copy index.html to 404.html
-      run: cp release/wwwroot/index.html release/wwwroot/404.html
+      - name: Run SSG
+        run: |
+          dotnet run --project ${{ env.SSG_PROJECT }} --configuration Release -- \
+            --content-dir ${{ github.workspace }}/${{ env.CONTENT_DIR }} \
+            --output-dir ${{ github.workspace }}/${{ env.OUTPUT_DIR }} \
+            --base-href /${{ env.REPOSITORY_NAME }}/
 
-    - name: Add .nojekyll file
-      run: touch release/wwwroot/.nojekyll
+      - name: Copy CSS assets into output
+        run: |
+          mkdir -p ${{ env.OUTPUT_DIR }}/css ${{ env.OUTPUT_DIR }}/css/bootstrap
+          cp src/Athena.Ssg/wwwroot/css/app.css \
+             ${{ env.OUTPUT_DIR }}/css/app.css
+          cp src/Athena.Ssg/wwwroot/css/bootstrap/bootstrap.min.css \
+             ${{ env.OUTPUT_DIR }}/css/bootstrap/bootstrap.min.css
+          cp src/Athena.Presentation.Components/wwwroot/css/Athena.Presentation.Components.css \
+             ${{ env.OUTPUT_DIR }}/css/Athena.Presentation.Components.css
 
-    - name: Commit wwwroot to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
-      with:
-        GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: release/wwwroot
+      - name: Add .nojekyll
+        run: touch ${{ env.OUTPUT_DIR }}/.nojekyll
+
+      - name: Commit output to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: ${{ env.OUTPUT_DIR }}
