@@ -1,20 +1,20 @@
 # Related Articles Components
 
-Components for the "See Also" bulleted list at the bottom of an article. In `.athena` documents, the `## See Also` section is automatically rendered using these components.
+Components for the "See Also" section at the bottom of an article. In `.athena` documents, the `## See Also` section is automatically rendered using these components.
 
 ---
 
 ## RelatedArticles
 
-Unordered list container for related article links.
+Renders `<div class="see-also">` with a "See also" heading followed by a CSS grid of cards. The grid fills available width with `minmax(180px, 1fr)` columns.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `ChildContent` | `RenderFragment` | Yes | `RelatedArticleLink` items |
+| `ChildContent` | `RenderFragment` | Yes | `RelatedArticleLink` cards |
 
 ```razor
 <RelatedArticles>
-    <RelatedArticleLink Text="List of Aenarian Churches" Link="aenarian-churches" />
+    <RelatedArticleLink Text="List of Aenarian Churches" Link="list-of-aenarian-churches" />
 </RelatedArticles>
 ```
 
@@ -22,7 +22,7 @@ Unordered list container for related article links.
 
 ## RelatedArticleLink
 
-A single bullet-point link to a related article.
+A single card in the see-also grid. Renders `<div class="card">` containing a link styled as `.name` in large serif.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|

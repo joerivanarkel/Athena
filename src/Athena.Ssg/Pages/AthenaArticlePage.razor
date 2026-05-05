@@ -106,8 +106,10 @@
     private RenderFragment Md(string markdown) => builder =>
         builder.AddMarkupContent(0, Markdown.ToHtml(ProcessInline(markdown), MarkdownPipeline));
 
-    private static string ProcessInline(string markdown) =>
-        System.Text.RegularExpressions.Regex.Replace(
+    private static string ProcessInline(string markdown)
+    {
+        // Resolve [[wikilinks]] to <a> tags
+        var result = System.Text.RegularExpressions.Regex.Replace(
             markdown,
             @"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]",
             m =>
@@ -116,6 +118,10 @@
                 var text = m.Groups[2].Success ? m.Groups[2].Value.Trim() : slug;
                 return $"<a href=\"{slug.ToLowerInvariant().Replace(' ', '-')}\">{System.Net.WebUtility.HtmlEncode(text)}</a>";
             });
+        // Strip inline footnote references [^key] — definitions are shown in the References section
+        result = System.Text.RegularExpressions.Regex.Replace(result, @"\[\^[^\]]+\]", "");
+        return result;
+    }
 
     private static string Anchor(string name) =>
         name.ToLowerInvariant().Replace(' ', '-');

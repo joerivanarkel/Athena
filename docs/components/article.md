@@ -1,16 +1,16 @@
 # Article Components
 
-Components for the main article body area. Used together to build a structured, styled article card.
+Components for the main article body area. Used together to compose a structured article.
 
 ---
 
 ## ArticleContainer
 
-Outer card wrapper for an article. Applies rounded border and light background.
+Transparent wrapper — passes children straight through with no wrapping element. Exists for structural symmetry in the page template.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `ChildContent` | `RenderFragment` | Yes | Content inside the card |
+| `ChildContent` | `RenderFragment` | Yes | Content inside the article |
 
 ```razor
 <ArticleContainer>
@@ -23,7 +23,7 @@ Outer card wrapper for an article. Applies rounded border and light background.
 
 ## ArticleContent
 
-Prose wrapper with padding and muted text color. Place all readable body content here.
+Transparent wrapper — passes children straight through. Prose styling is applied by `codex.css` on the parent `<article>` element via `ColumnLeft`.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -33,7 +33,7 @@ Prose wrapper with padding and muted text color. Place all readable body content
 
 ## ArticleTitle
 
-Renders the article heading bar with a large `<h3>`.
+Renders the article heading as `<h1 class="article-title">`. Styled in large serif with a generous bottom margin.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -47,7 +47,7 @@ Renders the article heading bar with a large `<h3>`.
 
 ## ArticleLink
 
-Inline hyperlink styled in blue. Use inside body text for cross-article links.
+Inline hyperlink. Uses the global `a` style from `codex.css` (muted underline that strengthens on hover). Use inside body text for cross-article links.
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|

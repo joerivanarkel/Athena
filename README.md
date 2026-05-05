@@ -1,50 +1,68 @@
 # Athena
 
-## Styling / SCSS
+A static site generator for worldbuilding encyclopedias. Parses `.athena` files (YAML frontmatter + Markdown body) and renders them as HTML using Blazor components.
 
-// Slightly Outdated
+## Architecture
 
-In this project we use SASS for styling. SASS is a CSS preprocessor that allows us to use variables, mixins, functions, and more, 
-all with a fully CSS-compatible syntax. We combined this with TailwindCSS, a utility-first CSS framework for rapidly building custom designs. We are able to use them with the help of this MSBuild task:
+| Project | Role |
+|---------|------|
+| `Athena.Content` | Parses `.athena` files into `AthenaDocument` records |
+| `Athena.Presentation.Components` | Blazor component library — layout, article, infobox, TOC, etc. |
+| `Athena.Ssg` | CLI that drives the render pipeline and writes static HTML output |
 
-In the Presentation project this task is used to compile the Global SCSS file and the Component SCSS files. The Global SCSS file is located in the `Styles` folder and the Component SCSS. For a Razor Class Library, only the Global SCSS file is compiled. This is because there is an issue with the GitHub Actions workflow that prevents the Component SCSS files from being compiled.
+## Styling
 
-```xml
-  <ItemGroup Label="Compile SCSS files">
-    <ComponentScssFiles 
-      Include="**/*/*.scss;**/*.scss"
-      Exclude="node_modules/**;wwwroot/**;Styles/**" />
-  </ItemGroup>
+Styles live in `src/Athena.Ssg/wwwroot/css/codex.css` — a single hand-authored CSS file with no build step required.
 
-  <Target Name="CompileComponentSass" BeforeTargets="CompileGlobalSass">
-    <Message Text="Compiling Component SCSS files" Importance="high" />
-    <Exec
-      Condition="!$([System.Text.RegularExpressions.Regex]::IsMatch('%(ComponentScssFiles.Identity)', `.*[/\\]_.*`))"
-      Command="npm run sass -- --style=compressed --no-source-map --load-path=$(MSBuildProjectName)/Styles/Core $(MSBuildProjectName)/%(ComponentScssFiles.Identity) $(MSBuildProjectName)/%(relativedir)%(filename).css" />
-  </Target>
+### Design system
 
-  <Target Name="CompileGlobalSass" BeforeTargets="Compile">
-    <Message Text="Compiling global SCSS file" Importance="high" />
-    <Exec
-      Command="npm run sass -- --style=compressed $(MSBuildProjectName)/Styles:$(MSBuildProjectName)/wwwroot/css" />
-  </Target>
+The stylesheet uses CSS custom properties defined on `:root`:
+
+| Variable | Purpose |
+|----------|---------|
+| `--paper` | Page background (warm off-white) |
+| `--ink` / `--ink-2` / `--ink-3` | Text at three levels of emphasis |
+| `--rule` / `--rule-2` | Divider lines |
+| `--rubric` | Accent color (warm red) — numerals, drop-cap, hover states |
+| `--link` | Hyperlink color (muted blue) |
+| `--serif` | EB Garamond — body text, headings, drop-cap |
+| `--sans` | Inter — UI labels, section headings, small caps |
+| `--mono` | JetBrains Mono — TOC numerals, metadata |
+| `--rail-w` | Right rail width (300 px, 260 px at mid breakpoint) |
+
+Google Fonts are loaded in `HtmlShell.cs` — no local font files needed.
+
+### Layout
+
+Pages use a CSS grid: `minmax(0, 1fr) var(--rail-w)`. The article occupies the left column (`<article>` via `ColumnLeft`); the infobox and TOC occupy the right rail (`<aside class="rail">` via `ColumnRight`). The grid collapses to a single column below 860 px.
+
+### Key CSS classes
+
+| Class | Element | Description |
+|-------|---------|-------------|
+| `.content-wrap` | `<div>` | Grid container (max-width 1200 px) |
+| `h1.article-title` | `<h1>` | Large serif title |
+| `h2.section` | `<h2>` | Uppercase sans section heading with auto roman-numeral prefix |
+| `h3.sub` | `<h3>` | Italic serif sub-heading |
+| `.infobox` | `<div>` | Right-rail summary card |
+| `.ib-name` / `.ib-alt` | `<div>` | Infobox title and alternate names |
+| `.toc` | `<div>` | Table of contents with roman-numeral counters |
+| `.see-also` | `<div>` | Card grid for related articles |
+| `.refs` | `<div>` | Reference list with roman-numeral counters |
+| `.index-wrap` | `<div>` | Index page container |
+
+## Running the SSG
+
+```bash
+dotnet run --project src/Athena.Ssg
 ```
 
-This task will compile all the SCSS files in the project and output them as CSS files. The outputted CSS files will be placed in the same directory as the SCSS files. The SCSS files that start with an underscore will not be compiled, but will be included in the other SCSS files. This is useful for creating partials.
+Output is written to `src/Athena.Ssg/bin/Debug/net9.0/output/`. Copy `wwwroot/css/codex.css` (and any asset files) alongside the HTML for a self-contained site.
 
-To include the SCSS files in the `dotnet watch` command, you need to add the following to the project file:
+## Content format
 
-```xml
-  <ItemGroup Label="Add SCSS files to dotnet watch">
-    <Watch Include="**\*.scss" />
-    <None Update="**\*.css" watch="false" />
-  </ItemGroup>
-```
+See [`docs/format/athena-format.md`](docs/format/athena-format.md) for the full `.athena` file specification.
 
-### Razor Class Library
+## Component documentation
 
-In order to use the SASS files from a Razor Class Library, you need to add the following stylesheets to your `index.html` file:
-
-```html
-<link href="_content/YourClassLib/css/YourClassLib.css" rel="stylesheet" />
-```
+See the [`docs/components/`](docs/components/) directory for per-component API references.
