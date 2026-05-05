@@ -1,0 +1,153 @@
+@using Markdig
+
+<TopContainer>
+    <ColumnLeft>
+        <ArticleContainer>
+            <ArticleTitle Title="@Document.Meta.Title" />
+            <ArticleContent>
+
+                @* Intro block (level 0, no heading) *@
+                @foreach (var s in Document.Sections.Where(s => s.Level == 0))
+                {
+                    <Paragraph>@Md(s.MarkdownBody)</Paragraph>
+                }
+
+                @* Top-level sections (level 1, skip See Also) *@
+                @foreach (var s in Document.Sections.Where(s => s.Level == 1 && s.Name != "See Also"))
+                {
+                    <Paragraph Title="@s.Name">
+                        @Md(s.MarkdownBody)
+                        @foreach (var sub in s.Children.Where(c => c.Name != "See Also"))
+                        {
+                            <Paragraph Title="@sub.Name">
+                                @Md(sub.MarkdownBody)
+                                @foreach (var subsub in sub.Children)
+                                {
+                                    <Paragraph Title="@subsub.Name">
+                                        @Md(subsub.MarkdownBody)
+                                    </Paragraph>
+                                }
+                            </Paragraph>
+                        }
+                    </Paragraph>
+                }
+
+                @* See Also → RelatedArticles *@
+                @{
+                    var seeAlsoLinks = FindSeeAlso(Document.Sections);
+                }
+                @if (seeAlsoLinks.Count > 0)
+                {
+                    <RelatedArticles>
+                        @foreach (var link in seeAlsoLinks)
+                        {
+                            <RelatedArticleLink Text="@link.Text" Link="@link.Href" />
+                        }
+                    </RelatedArticles>
+                }
+
+            </ArticleContent>
+        </ArticleContainer>
+
+        @if (Document.Footnotes.Count > 0)
+        {
+            <ReferenceSection>
+                @foreach (var fn in Document.Footnotes)
+                {
+                    <ReferenceLink Href="#">@fn.Text</ReferenceLink>
+                }
+            </ReferenceSection>
+        }
+    </ColumnLeft>
+
+    <ColumnRight>
+        @if (Document.Meta.Infobox is { } box)
+        {
+            <Infobox>
+                <InfoboxTitle Title="@(box.Title ?? Document.Meta.Title)">
+                    @foreach (var lang in box.Languages)
+                    {
+                        <LanguageOption Name="@lang.Name" Language="@lang.Language" />
+                    }
+                </InfoboxTitle>
+                <InfoboxDetails>
+                    <ChildContent>
+                        @foreach (var detail in box.Details)
+                        {
+                            <InfoboxDetailCell Item="@detail.Item" Value="@detail.Value" />
+                        }
+                    </ChildContent>
+                    <Image>
+                        @if (box.Image is not null)
+                        {
+                            <img src="@box.Image.Src" alt="@box.Image.Alt" class="w-full rounded mb-2" />
+                        }
+                    </Image>
+                </InfoboxDetails>
+            </Infobox>
+        }
+
+        <TableOfContents>
+            @foreach (var entry in TocEntries(Document.Sections))
+            {
+                <HeaderLink Value="@entry.Name" Href="@Anchor(entry.Name)" />
+            }
+        </TableOfContents>
+    </ColumnRight>
+</TopContainer>
+
+@code {
+    [Parameter, EditorRequired] public AthenaDocument Document { get; set; } = null!;
+
+    private static readonly MarkdownPipeline MarkdownPipeline = new MarkdownPipelineBuilder()
+        .UseAdvancedExtensions()
+        .Build();
+
+    private RenderFragment Md(string markdown) => builder =>
+        builder.AddMarkupContent(0, Markdown.ToHtml(ProcessInline(markdown), MarkdownPipeline));
+
+    private static string ProcessInline(string markdown) =>
+        System.Text.RegularExpressions.Regex.Replace(
+            markdown,
+            @"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]",
+            m =>
+            {
+                var slug = m.Groups[1].Value.Trim();
+                var text = m.Groups[2].Success ? m.Groups[2].Value.Trim() : slug;
+                return $"<a href=\"{slug.ToLowerInvariant().Replace(' ', '-')}\" class=\"text-blue-500\">{System.Net.WebUtility.HtmlEncode(text)}</a>";
+            });
+
+    private static string Anchor(string name) =>
+        name.ToLowerInvariant().Replace(' ', '-');
+
+    private static IEnumerable<AthenaSection> TocEntries(IReadOnlyList<AthenaSection> sections) =>
+        sections
+            .Where(s => s.Level >= 1 && s.Name != "See Also")
+            .SelectMany(s => new[] { s }.Concat(s.Children.Where(c => c.Level == 2 && c.Name != "See Also")));
+
+    private static List<(string Text, string Href)> FindSeeAlso(IReadOnlyList<AthenaSection> sections)
+    {
+        var result = new List<(string, string)>();
+        foreach (var s in sections)
+        {
+            if (s.Name == "See Also")
+                result.AddRange(ParseSeeAlsoLinks(s.MarkdownBody));
+            else
+                result.AddRange(FindSeeAlso(s.Children));
+        }
+        return result;
+    }
+
+    private static IEnumerable<(string Text, string Href)> ParseSeeAlsoLinks(string markdown)
+    {
+        var matches = System.Text.RegularExpressions.Regex.Matches(
+            markdown,
+            @"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]");
+        foreach (System.Text.RegularExpressions.Match m in matches)
+        {
+            var slug = m.Groups[1].Value.Trim();
+            var text = m.Groups[2].Success ? m.Groups[2].Value.Trim() : slug;
+            yield return (text, slug.ToLowerInvariant().Replace(' ', '-'));
+        }
+    }
+}
