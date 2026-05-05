@@ -10,8 +10,8 @@ on:
 env:
   REPOSITORY_NAME: Athena
   SSG_PROJECT: ./src/Athena.Ssg/Athena.Ssg.csproj
-  CONTENT_DIR: ./src/Athena.Content/Content
-  OUTPUT_DIR: ./ssg-output
+  CONTENT_DIR: src/Athena.Content/Content
+  OUTPUT_DIR: ssg-output
 
 jobs:
   build:
@@ -60,8 +60,8 @@ jobs:
       - name: Run SSG
         run: |
           dotnet run --project ${{ env.SSG_PROJECT }} --configuration Release -- \
-            --content-dir ${{ env.CONTENT_DIR }} \
-            --output-dir ${{ env.OUTPUT_DIR }} \
+            --content-dir ${{ github.workspace }}/${{ env.CONTENT_DIR }} \
+            --output-dir ${{ github.workspace }}/${{ env.OUTPUT_DIR }} \
             --base-href /${{ env.REPOSITORY_NAME }}/
 
       - name: Copy CSS assets into output

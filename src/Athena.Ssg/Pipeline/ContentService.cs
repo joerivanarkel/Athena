@@ -9,8 +9,31 @@ internal sealed class ContentService
 
     public ContentService(string contentDirectory)
     {
+        if (!Directory.Exists(contentDirectory))
+            throw new DirectoryNotFoundException(
+                $"Content directory not found: {contentDirectory}\n" +
+                $"  CWD: {Directory.GetCurrentDirectory()}\n" +
+                $"  Hint: pass an absolute path or run from the repo root.");
+
         var files = Directory.GetFiles(contentDirectory, "*.athena", SearchOption.AllDirectories);
-        _documents = files.Select(AthenaParser.Parse).ToList();
+        Console.WriteLine($"  parsing   : {files.Length} file(s) from {contentDirectory}");
+
+        var documents = new List<AthenaDocument>();
+        foreach (var file in files)
+        {
+            try
+            {
+                var doc = AthenaParser.Parse(file);
+                Console.WriteLine($"    [ok] {doc.Meta.Slug} — \"{doc.Meta.Title}\" ({doc.Sections.Count} sections, {doc.Footnotes.Count} footnotes)");
+                documents.Add(doc);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"    [FAIL] {Path.GetFileName(file)}: {ex.Message}");
+            }
+        }
+
+        _documents = documents;
     }
 
     public IReadOnlyList<AthenaDocument> All => _documents;
