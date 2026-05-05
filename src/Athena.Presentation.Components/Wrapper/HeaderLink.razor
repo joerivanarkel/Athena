@@ -1,9 +1,7 @@
 @inject NavigationManager NavigationManager
 
 <li>
-    <a class="text-blue-500" href="@($"{GetBaseUri()}#{Href}")">
-        @Value
-    </a>
+    <a href="@($"{GetBaseUri()}#{Href}")">@Value</a>
 </li>
 
 @code {
