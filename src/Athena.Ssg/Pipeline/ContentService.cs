@@ -30,11 +30,14 @@ internal sealed class ContentService
             catch (Exception ex)
             {
                 Console.Error.WriteLine($"    [FAIL] {Path.GetFileName(file)}: {ex.Message}");
+                FailedCount++;
             }
         }
 
         _documents = documents;
     }
+
+    public int FailedCount { get; private set; }
 
     public IReadOnlyList<AthenaDocument> All => _documents;
 

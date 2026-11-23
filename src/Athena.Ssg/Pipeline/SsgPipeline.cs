@@ -9,6 +9,7 @@ internal sealed class SsgPipeline
     private readonly ContentService _content;
     private readonly string _outputDir;
     private readonly string _baseHref;
+    private readonly HashSet<string> _brokenLinks = new(StringComparer.Ordinal);
 
     public SsgPipeline(ContentService content, string outputDir, string baseHref)
     {
@@ -31,6 +32,7 @@ internal sealed class SsgPipeline
             var html = await renderer.RenderAsync<AthenaArticlePage>(
                 new Dictionary<string, object?> { ["Document"] = document });
             var page = HtmlShell.Wrap(document.Meta.Title, html, _baseHref);
+            CheckLinks(document.Meta.Slug, html);
             var dir = Path.Combine(_outputDir, document.Meta.Slug);
             Directory.CreateDirectory(dir);
             await File.WriteAllTextAsync(Path.Combine(dir, "index.html"), page);
@@ -45,6 +47,22 @@ internal sealed class SsgPipeline
         Console.WriteLine($"    [ok] / ({sw.ElapsedMilliseconds} ms, {indexPage.Length:N0} bytes)");
 
         CopyAssets(assetsSourceDir, _outputDir);
+
+        if (_brokenLinks.Count > 0)
+            Console.WriteLine($"  links     : {_brokenLinks.Count} broken internal link(s) (warnings only)");
+    }
+
+    // Internal article links are bare slugs (e.g. href="aenar"); warn when no such article exists.
+    private void CheckLinks(string fromSlug, string html)
+    {
+        var known = _content.All.Select(d => d.Meta.Slug).ToHashSet(StringComparer.OrdinalIgnoreCase);
+        foreach (System.Text.RegularExpressions.Match m in
+                 System.Text.RegularExpressions.Regex.Matches(html, "href=\"([a-z0-9][a-z0-9-]*)/?\""))
+        {
+            var target = m.Groups[1].Value;
+            if (!known.Contains(target) && _brokenLinks.Add($"{fromSlug} -> {target}"))
+                Console.WriteLine($"    [warn] {fromSlug}: link to missing article '{target}'");
+        }
     }
 
     private static void CopyAssets(string sourceDir, string destDir)
