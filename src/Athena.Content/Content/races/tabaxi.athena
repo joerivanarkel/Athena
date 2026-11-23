@@ -1,0 +1,47 @@
+---
+title: "Tabaxi"
+slug: tabaxi
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Tabaxi"
+  image:
+    src: "assets/images/Tabaxi.jpg"
+    alt: "Tabaxi"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Feline Agility</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "Human-like"
+    - item: "Average height"
+      value: "Between 1,8m and  2,1m"
+    - item: "Average weight"
+      value: "Between 42kg and 113kg"
+    - item: "Distinctions"
+      value: "<ul><li>Fur-covered</li><li>Tail</li></ul>"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Tabaxi** (/' *tɑːˈbæksi* /, Scripts) are a skinwalker race of feline humanoids
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Feline Agility
+Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.
+
+# Subraces

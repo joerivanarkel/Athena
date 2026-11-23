@@ -1,0 +1,52 @@
+---
+title: "Cha’pa"
+slug: chapa
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Cha’pa"
+  image:
+    src: "assets/images/Cha-pa.jpg"
+    alt: "Cha’pa"
+  details:
+    - item: "Type"
+      value: "Skinwalkers"
+    - item: "Racial Abilities"
+      value: "<ul><li>Tail</li><li>Woodworker</li><li>Wood Kin</li><li>Wooded Magics</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "50 years"
+    - item: "Average height"
+      value: "Between 1,2m and  1,5m"
+    - item: "Average weight"
+      value: "Between kg and kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li></ul>"
+---
+
+**Cha’pa** (/' *ʃapa* /, Scripts) are a race of humanoid beavers.
+%%The industrious beaverfolk live primarily along rivers, building tiered structures upon and within a its waters. They live in family groups of eight to twelve members, and by the time they are four years old, most have already learned how to swim and how to build. Cha’pa consider cooperation a virtue, so they teach their young how to work with others from an early age.
+
+Cha’pa also take great pride in the craftsmanship, maintenance and expansion of their lodges, which afford them not only a roof over their head, but a constant food supply, all located somewhere inconvenient to their enemies. Clever cha’pa create sections of their dwellings that can be quickly detached, carried away by the river’s turbulent current, or lay hidden traps that utilize sharp wooden stakes as a deterrent to invasion. Some even keep a hidden chamber of the structure underwater, dry and with an air pocket, where their loved ones can retreat to until such time as a danger has passed.%%
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Tail
+Your broad, scaly tail is a natural weapon with which you can make unarmed strikes, dealing 1d6 bludgeoning damage. You can also slap your tail on a liquid surface and produce a sound that is audible up to 200 feet away.
+
+## Woodworker
+You are proficient with woodworker’s tools and carpenter’s tools, and your hardy front teeth can be used for simple woodworking tasks, such as chipping, shaping. Many cha’pa take pride in working with no proper tools at all, preferring the intimacy (and nutrition) of crafting their works using nothing more than their own teeth. For example, if you have a length of wood, you can sharpen a stick to a deadly point and create a simple wooden spear during a short rest.
+
+## Wood Kin
+Whenever you make an Intelligence (Nature) check related to woodwork or architecture, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus. For example, you might identify the type of wood used, identify rotted wood or other structural inefficiencies in a wooden structure.
+
+## Wooded Magics
+You know the _shillelagh_ cantrip. Wisdom is your spellcasting ability for the spell.

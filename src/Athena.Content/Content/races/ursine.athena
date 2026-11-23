@@ -1,0 +1,53 @@
+---
+title: "Ursine"
+slug: ursine
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Ursine"
+  image:
+    src: "assets/images/Ursine.jpg"
+    alt: "Ursine"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Bear Claws</li><li>Powerful Build</li><li>Natural Prowess</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "60 years"
+    - item: "Average height"
+      value: "Between 1,8m and 2,4 m"
+    - item: "Average weight"
+      value: "Between 136kg and 226kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li></ul>"
+---
+
+**Ursine** (/' *ɹ̩sajn* /, Scripts) are a race of bear-like humanoids
+%%It is possible the Ursine descended from bears, but the truth has long since been lost. They do show great respect for the ‘cousins’ and you will never hear of an Ursine taming or putting a bear in captivity. However they can commune with bears and may ask them for favors and kindnesses.
+
+The Ursine are known to be a reclusive race and often hard to find. Some even believe they are just legends. This belief is aided in they do not have a political structure. Ursine travel as small and tight knit family groups called Sleuths. These groups will typically stay in one geographic area and be familiar with other sleuths living in the region.
+
+Because Ursine don’t have any large social groups they aren’t generally lawful. The family comes first and each family will have their own rules. They believe that right and wrong is something the family decides and laws are left for races that don’t have as strong a family connection as they do.%%
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Bear Claws
+You can use your paws as natural weapons. You are proficient with your unarmed strikes, which deal 1d4 slashing damage on a hit.
+
+## Powerful Build
+You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.
+
+## Natural Prowess
+You gain advantage on any Perception check that benefits your powerful sense of smell. This perception bonus is not granted to any sense other than smell.

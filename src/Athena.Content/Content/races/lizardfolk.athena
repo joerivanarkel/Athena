@@ -1,0 +1,42 @@
+---
+title: "Lizardfolk"
+slug: lizardfolk
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Lizardfolk"
+  image:
+    src: "assets/images/Lizardfolk.webp"
+    alt: "Lizardfolk"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Hold Breath</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "80 years"
+    - item: "Average height"
+      value: "Between 1,8m and  2,1m"
+    - item: "Average weight"
+      value: "Between 90kg and 113kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li></ul>"
+---
+
+**Lizardfolk** (/' *lɪzɹ̩dfowk* /, Scripts) are a race of reptilian humanoids.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Hold Breath

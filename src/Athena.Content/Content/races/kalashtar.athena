@@ -1,0 +1,53 @@
+---
+title: "Kalashtar"
+slug: kalashtar
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Kalashtar"
+  image:
+    src: "assets/images/Kalashtar.png"
+    alt: "Kalashtar"
+  details:
+    - item: "Type"
+      value: "Medium"
+    - item: "Racial Abilities"
+      value: "<ul><li>Dual Mind</li><li>Mental Discipline</li><li>Mind Link</li><li> Psychic Glamour</li><li>Severed from Dreams</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Average height"
+      value: "Between 1,7m and  1,9m"
+    - item: "Average weight"
+      value: "Between 59kg and 100kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li><li>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Kalashtar** (/'IPA/, Scripts) are a race of psionic humanoids
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Dual Mind
+When you make a Wisdom saving throw, you can use your reaction to gain advantage on the roll. You can use this trait immediately before or after you roll, but before any of the roll's effects occur.
+
+## Mental Discipline
+You have resistance to psychic damage.
+
+## Mind Link
+You can speak telepathically to any creature you can see within 60 feet of you. You don’t need to share a language with the creature for it to understand your telepathic messages, but the creature must be able to understand at least one language or be telepathic itself.
+
+As a bonus action when you’re speaking telepathically to a creature, you can give that creature the ability to speak telepathically to you until the start of your next turn. To use this ability, the creature must be within 60 feet of you and be able to see you.
+
+## Psychic Glamour
+Choose one of the following skills: Insight, Intimidation, Performance, or Persuasion. You have advantage on all ability checks you make with that skill.
+
+## Severed from Dreams
+Kalashtar sleep, but they don’t connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to magical spells and effects that require you to dream, like the Dream spell, but not to spells and effects that put you to sleep, like the Sleep spell.

@@ -1,0 +1,44 @@
+---
+title: "Orc"
+slug: orc
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Orc"
+  image:
+    src: "assets/images/Orc.png"
+    alt: "Orc"
+  details:
+    - item: "Type"
+      value: "Clankin"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Relentless Endurance</li><li>Savage Attacks</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "75 years"
+    - item: "Average height"
+      value: "Between 1,5m and 2,1 m"
+    - item: "Average weight"
+      value: "Between 69kg and 199kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Orc** (/' *ɔɹk* /, Scripts) are humanoids born of orc ancestry.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Relentless Endurance
+
+## Savage Attacks

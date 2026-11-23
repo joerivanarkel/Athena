@@ -1,0 +1,47 @@
+---
+title: "Mousefolk"
+slug: mousefolk
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Mousefolk"
+  image:
+    src: "assets/images/Mousefolk.jpg"
+    alt: "Mousefolk"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Racial Abilities"
+      value: "<ul><li></li></ul>"
+    - item: "Size Category"
+      value: "Tiny"
+    - item: "Lifespan"
+      value: "40 years"
+    - item: "Average height"
+      value: "Between 0,6m and  0,73m"
+    - item: "Average weight"
+      value: "Between 2kg and 10kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li></ul>"
+---
+
+**Mousefolk** (/' *mawsfowk* /, Scripts) are a humanoid race resembling mouses.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Keen Senses
+You have proficiency in the Perception skill.
+
+## Mousefolk Weapon Training
+You have proficiency with the rapier, shortsword, shortbow, and handaxe.
+
+## Nimble Dodge
+When attacked by an attack of opportunity, you may use your reaction to impose disadvantage on that attack.

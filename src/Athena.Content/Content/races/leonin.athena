@@ -1,0 +1,41 @@
+---
+title: "Leonin"
+slug: leonin
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Leonin"
+  image:
+    src: "assets/images/Leonin.webp"
+    alt: "Leonin"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li></li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "Human-like"
+    - item: "Average height"
+      value: "Between 1,9m and 2,1 m"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li></ul>"
+---
+
+**Leonin** (/' *lɛownɪn* /, Scripts) are a race of lion-like humanoids.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Daunting Roar
+As a bonus action, you can let out an especially menacing roar. Creatures of your choice within 10 feet of you that can hear you must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution modifier. Once you use this trait, you can’t use it again until you finish a short or long rest.

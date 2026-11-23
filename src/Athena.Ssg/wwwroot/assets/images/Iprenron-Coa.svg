@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="2253" height="2651" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="shield_470845917">
+      <path d="M25 135 V60 l22-13 16-37 h75 l15 37 22 13 v75l-22 18-16 37 H63l-16-37z"/>
+    </clipPath>
+    <g id="crossMaltese" stroke-width=".5" author="Azgaar" license="https://creativecommons.org/publicdomain/zero/1.0">
+      <path d="M98 98L83 60l17 11 17-11-15 38 38-15-11 17 11 17-38-15 15 38-17-11-17 11 15-38-38 15 11-17-11-17z"/>
+    </g>
+  </defs>
+  <g clip-path="url(#shield_470845917)">
+    <rect class="field" x="0" y="0" width="200" height="200" fill="#333333"/>
+    <g class="ordinary" i="0">
+      <path d="M25 135 V60 l22-13 16-37 h75 l15 37 22 13 v75l-22 18-16 37 H63l-16-37z" fill="none" stroke="#fafafa" stroke-width="5%" transform="translate(15 15) scale(.85)"/>
+    </g>
+    <g class="charge" i="0" charge="crossMaltese" fill="#fafafa" stroke="none">
+      <use xlink:href="#crossMaltese" transform="translate(-31 -31) scale(1.31)"/>
+    </g>
+  </g>
+  <path class="grad" d="M25 135 V60 l22-13 16-37 h75 l15 37 22 13 v75l-22 18-16 37 H63l-16-37z" fill="none" stroke="#000000" stroke-width="1" style="pointer-events: none;"/>
+</svg>

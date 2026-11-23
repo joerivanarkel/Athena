@@ -1,0 +1,46 @@
+---
+title: "Centaur"
+slug: centaur
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Centaur"
+  image:
+    src: "assets/images/Centaur.jpg"
+    alt: "Centaur"
+  details:
+    - item: "Type"
+      value: "Clankin"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Charge</li><li>Hooves</li><li>Equine Build</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "Human-like"
+    - item: "Average height"
+      value: "Between 1,8m and 2,1 m"
+    - item: "Average weight"
+      value: "850kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li></ul>"
+---
+
+**Centaur** (/'IPA/, Scripts) are a race with the lower body of a horse and the torso, arms, and head of a humanoid.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+## Charge
+If you move at least 30 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your hooves.
+## Hooves
+Your hooves are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+## Equine Build
+You count as one size larger when determining your carrying capacity and the weight you can push or drag. In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.

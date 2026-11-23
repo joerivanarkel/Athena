@@ -1,0 +1,54 @@
+---
+title: "Halfling"
+slug: halfling
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Halfling"
+  image:
+    src: "assets/images/Halfling.webp"
+    alt: "Halfling"
+  details:
+    - item: "Type"
+      value: "Humanoid"
+    - item: "Subraces"
+      value: "<ul><li>Lightfoot</li><li>Stout</li></ul>"
+    - item: "Racial Abilities"
+      value: "<ul><li>Lucky</li><li>Brave</li><li>Halfling Nimbleness</li></ul>"
+    - item: "Size Category"
+      value: "Small"
+    - item: "Lifespan"
+      value: "150 years"
+    - item: "Average height"
+      value: "Between 0,81m and  1m"
+    - item: "Average weight"
+      value: "Between 14kg and 16kg"
+    - item: "Skin color"
+      value: "<ul><li>Human-like</li></ul>"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Halfling** (/' *hæfəlɪŋ* /, Scripts) are small humanoids renowned simultaneously for their simple agrarian lifestyle and their incredible bravery in the face of danger.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Lucky
+
+## Brave
+
+## Halfing Nimbleness
+
+# Subraces
+
+## Lightfoot
+
+## Stout

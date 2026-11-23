@@ -1,0 +1,49 @@
+---
+title: "Kua-Toa"
+slug: kua-toa
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Kua-Toa"
+  image:
+    src: "assets/images/Kua-Toa.jpg"
+    alt: "Kua-Toa"
+  details:
+    - item: "Type"
+      value: "Finkin"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Amphibious</li><li>Slippery</li><li>Otherworldly Perception</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "60 years"
+    - item: "Average height"
+      value: "1,5m"
+    - item: "Average weight"
+      value: "73kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Kua-Toa** / *kuːoʊˈtoʊɑː* /, Scripts) are a grotesque cross between a fish and a humanoid.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Amphibious
+You can breathe in both air and water.
+
+## Slippery
+You have advantage on ability checks and saving throws made to escape a grapple or avoid being grappled.
+
+## Otherworldly Perception
+As an action, you can choose to glimpse beyond the veil of reality for a brief window of time. For the next minute, you can see invisible creatures and objects within 60 feet of you as if they were visible, and you can see 60 feet into the Ethereal Plane. Once you use this trait, you can do so again until you finish a long rest.

@@ -1,0 +1,47 @@
+---
+title: "Rabbitfolk"
+slug: rabbitfolk
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Rabbitfolk"
+  image:
+    src: "assets/images/Rabbitfolk.jpg"
+    alt: "Rabbitfolk"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Racial Abilities"
+      value: "<ul><li>Hare-Trigger</li><li>Leporine Senses</li><li>Lucky Footwork</li><li>Rabbit Hop</li></ul>"
+    - item: "Size Category"
+      value: "Medium/Small"
+    - item: "Lifespan"
+      value: "Human-like"
+    - item: "Average height"
+      value: "0,9m"
+    - item: "Average weight"
+      value: "20kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li></ul>"
+---
+
+**Rabbitfolk** (/' *ɹæbətfowk* /, Scripts), or **Harengon**, are a humanoid race resembling rabbits.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Hare-Trigger
+You add your proficiency bonus to your initiative rolls.
+## Leporine Senses
+You have proficiency in the Perception skill.
+## Lucky Footwork
+When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the result, potentially turning the failure into a success.
+## Rabbit Hop
+Once during each of your turns when you walk at least 5 feet, you can hop, rolling a d12 and moving that many feet in a direction of your choice. This extra distance doesn’t cost movement, but you can hop only if your speed isn’t 0.

@@ -1,0 +1,44 @@
+---
+title: "Giff"
+slug: giff
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Giff"
+  image:
+    src: "assets/images/Giff.webp"
+    alt: "Giff"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Racial Abilities"
+      value: "<ul><li>Headfirst Charge</li><li>Natural Armor</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "70 years"
+    - item: "Average height"
+      value: "Between 2,4m and  2,7m"
+    - item: "Average weight"
+      value: "130kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Giff** (/' *ɡɪf* /, Scripts) are a humanoid race of hippo-like humans.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Headfirst Charge
+If you move at least 20 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your headbutt.
+
+## Natural Armor
+You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.

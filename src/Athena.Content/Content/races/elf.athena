@@ -1,0 +1,70 @@
+---
+title: "Elf"
+slug: elf
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Elf"
+  image:
+    src: "assets/images/Elf.webp"
+    alt: "Elf"
+  details:
+    - item: "Type"
+      value: "Humanoid"
+    - item: "Subraces"
+      value: "<ul><li></li><li></li><li>Dark Elf ()</li><li></li></ul>"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Fey ancestry</li><li>Keen Senses</li><li>Trance</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "750 years"
+    - item: "Average height"
+      value: "Between 1,4m and 1,7m"
+    - item: "Average weight"
+      value: "Between 40kg and 70kg"
+    - item: "Skin color"
+      value: "<ul><li>Human-Like</li><li>Gray, Purple and Dark Blue</li><li>Blue-green</li></ul>"
+    - item: "Distinctions"
+      value: "Pointed ears"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li><li>Feywild</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+---
+
+**Elves** (/' *ɛlvz* /) are one of the common races of [[iagoband|Iagoband]].  Defined and known by their pointed ears and fey ancestry.
+
+# Appearance
+The Elves are similar to humans, although comparatively slightly lesser in size and greater in their natural beauty. Their height runs between 1,4m and 1,7m and their weight runs between 40kg and 70kg.
+
+The elven skin-tone varies between the subraces. High Elves and Wood elves have human-like skin-tones, which varies between climates. Drows have dark grey to purple skin-tones, due to their nature and lack of sunlight. The aquatic influences in the Sea elves have transformed their previous human-like skin-tone into blue-greenish tones.
+
+# Other Planes
+The elves are originally form the Feywild, although most now most of them live on the Material Plane. 
+
+# Powers and Abilities 
+## Keen Senses
+The Pointed Ears of elves have over generations given them heightened senses. Their eyes are more perceptive of small changes and their ears have learned to pick up smaller sounds.
+
+## Trance
+Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. The Common word for such meditation is “trance.” In Trance it is still possible to dream, although through practice more lucidly.
+
+# Subraces
+## High Elf
+The High Elves are the most studious and magically adept of their kin. They are pioneers on the area of magic study and creating magics. They mostly have blond hair and a human-like skin tone.
+
+## Wood Elf
+The Wood Elves are the wisest among their kin. They live in more rural forest areas and as such are light footed and have high martial. Their hair and skin usually matches humans.
+
+## Drow
+The Drow, not unlike the [[dwarf|Duergar]], live underground in the Mountain Cities.  Their eyes, skin and hearing have adjusted to the lack of sun. They can see underground very well, but their iris's can't adjust to the sunlight outside. The lack of sun underground turned their skin grey. Their hearing filters out the huge bouncing echoes underground. They also have innate casting of *Dancing Lights*
+
+## Sea Elf
+The Sea Elf have evolved to be more akin to [[triton|Triton]] or [[merfolk|Merfolk]]. They are adept swimmers, gained underwater breathing and are cold water resistant. They have aquatic skin tones and hair colors.
