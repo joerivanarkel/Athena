@@ -1,0 +1,170 @@
+---
+title: "Hiureno"
+slug: hiureno
+category: languages
+generated: obsidian-import
+tags: [language, languages]
+---
+
+%%
+Vulgar input:
+b d g j k l m n p q r s t w ŋ ʃ ʦ
+a e i o u ui̯
+
+Uses Ogham alphabet
+Basque orgin
+
+b > ᚁ
+d >ᚇ
+g >ᚌ
+j >ᚆ
+k >ᚉ
+l >ᚂ
+m>ᚋ
+n >ᚅ
+p >ᚚ
+q >ᚊ
+r >ᚏ
+s >ᚄ
+t >ᚈ
+w >ᚃ
+ŋ >ᚍ
+ʃ >ᚎ
+ʦ>ᚎ
+a >ᚐ
+e >ᚓ
+ui̯>ᚗ
+i >ᚔ
+o >ᚑ
+u >ᚒ
+
+%%
+**Hiureno** (/' *hiureno* /, [[hiureno|Hiureno]]: *ᚔᚒᚏᚓᚅᚑ* ) is a language spoken in the area of [[praetia|Praetia]].
+
+# Orthography
+Character | IPA
+--|--
+ᚁ|b
+ᚂ|l
+ᚃ|w
+ᚄ|s
+ᚅ|n
+ |
+ᚆ|j
+ᚇ|d
+ᚈ|t
+ᚉ|k
+ᚊ|q
+ |
+ᚋ|m
+ᚌ|ɡ
+ᚍ|ŋ
+ᚎ|ʦ, ʃ
+ᚏ|r
+ |
+ᚐ|a
+ᚑ|o
+ᚒ|u
+ᚓ|e
+ᚔ|i
+ |
+ᚚ|p
+ᚗ|ui
+
+## Grammatical Character
+Character|Meaning
+--|--
+᚛|Start of Sentence
+᚜|End of Sentence
+ |Space
+
+## Spelling Rules
+| Pronunciation | Spelling |
+|---------------|----------|
+| j             | y        |
+| ŋ             | ng       |
+| ʃ             | sh       |
+| ʦ             | ts       |
+
+# Grammar
+**Main word order**: Subject Verb Object (Prepositional phrase). “Mary opened the door with a key” turns into Mary opened the door with a key.  
+**Adjective order**: Adjectives are positioned before the noun.  
+**Adposition**: prepositions
+
+**Consonants** in front of a unmatch-able consonant combination is pronounced separately. I.e. in ndo, which is pronounced as n-do
+
+## Nouns
+ | | 
+ --|--|--
+ Singular| <br>ᚇᚆᚓᚉᚐ<br> |No Affix<br>**dyeˈka** / *djeˈka* /<br>*dog*
+ Plural|ᚉᚋᚐ<br>ᚉᚋᚐᚇᚆᚓᚉᚐ<br> |Prefix: **kma**-<br>**kmaˈdyeka** / *kmaˈdjeka* /<br>*dogs*
+
+## Articles
+ | | 
+ --|--|--
+ **Definite**|ᚈᚔ|**ti** / *ti* /<br>*the*
+ **Indefinite**|ᚔ|**i** / *i* /<br>*a, some*
+
+## Pronouns
+ | | 
+ --|--|--
+**1st singular**|ᚅᚇᚑ|**ndo** / *ndo* /<br>*I, me, mine*
+**2nd singular**|ᚁᚆᚐ|**bya** / *bja* /<br>*you, yours*
+**3rd singular msc**|ᚎᚂᚗ|**shlui** / *ʃlui̯* /<br>*he, him, his*
+**3rd singular fem**|ᚉᚄᚗ|**ksui** / *ksui̯* /<br>*she, her, hers*
+**3rd singular ntr**|ᚁᚂᚗ|**blui** / *blui̯* /<br>*they, them, theirs*
+ |
+**1st plural**|ᚐ|**a** / *a* /<br>*we, us, ours*
+**2nd plural**|ᚇᚆᚒ|**dyu** / *dju* /<br>*you all, yours (pl)*
+**3rd plural**|ᚚᚔ|**pi** / *pi* /<br>*they, them, theirs (pl)*
+
+## Possessive determiners
+ | | 
+--|--|--
+**1st singular**|ᚎᚐ|**tsa** / *ʦa* /<br>*my*
+**2nd singular**|ᚈᚏᚐ|**tra** / *tra* /<br>*your*
+**3rd singular msc**|ᚉᚄᚐ|**ksa** / *ksa* /<br>*his*
+**3rd singular fem**|ᚄᚂᚑ|**slo** / *slo* /<br>*hers*
+**3rd singular ntr**|ᚆᚐᚋ|**yam** / *jam* /<br>*theirs*
+**1st plural**|ᚏᚆᚑ|**ryo** / *rjo* /<br>*our*
+**2nd plural**|ᚄᚑ|**so** / *so* /<br>*your (pl)*
+**3rd plural**|ᚁᚑ|**bo** / *bo* /<br>*their*
+
+## Verbs
+ | | 
+--|--|--
+**Present**|<br>ᚁᚆᚓ|No affix<br>**bye** / *bje* /<br>*learn*
+**Past**|ᚅᚈᚐ<br>ᚅᚈᚐᚁᚆᚓ|Prefix **nta**-<br>**ntaˈbye** / *ntaˈbje* /<br>*learned*
+**Remote past**|ᚆᚗ<br>ᚆᚗᚁᚆᚓ|Prefix **jui̯**-<br>**yuiˈbye** / *jui̯ˈbje* /<br>*learned (long ago)*
+**Future**|ᚇᚅᚒ<br>ᚇᚅᚒᚁᚆᚓ|Prefix **dnu**-<br>**dnuˈbye** / *dnuˈbje* /<br>*will learn*
+
+## Derivational Morphology
+ | | 
+--|--|--
+**Adjective → adverb**|Prefix dui̯-|ᚇᚗ
+**Adjective → noun (the quality of being [adj])**|Prefix we-|ᚃᚓ
+**Adjective → verb (to make something [adj])**|Prefix ga-|ᚌᚐ
+**Noun → adjective (having the quality of [noun])** |Prefix jo-|ᚆᚑ
+**Noun → adjective relating to noun (e.g. economy → economic)**|Prefix wo-|ᚃᚑ
+**Noun to verb**|Prefix bju-|ᚁᚆᚒ
+**Verb → adjective (result of doing [verb])**|Prefix te-|ᚈᚓ
+**Tending to**|Prefix gra-|ᚌᚏᚐ
+**Verb → noun (the act of [verb])**|Prefix wu-|ᚃᚒ
+**Verb → noun that verb produces (e.g. know → knowledge)**|Prefix tre-|ᚈᚏᚓ
+**One who [verb]s (e.g. paint → painter)**|Prefix ʦu-|ᚎᚒ
+**Place of (e.g. wine → winery)**|Prefix ba-|ᚁᚐ
+**Diminutive**|Prefix brui̯-|ᚁᚏᚗ
+**Augmentative**|Prefix ŋku-|ᚍᚉᚒ
+
+# Glossary
+- Hiureno Glossary
+
+%%
+
+boy or girl is man/woman's # Diminutive
+
+yesterday = day before
+today = this day
+tommorow = coming day
+ 
+%%

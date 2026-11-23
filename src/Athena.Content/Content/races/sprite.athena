@@ -1,0 +1,43 @@
+---
+title: "Sprite"
+slug: sprite
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Sprite"
+  image:
+    src: "assets/images/Sprite.jpg"
+    alt: "Sprite"
+  details:
+    - item: "Type"
+      value: "Planeborn"
+    - item: "Racial Abilities"
+      value: "<ul><li>Heart Sight</li><li>Invisibility</li><li>Tiny Fighters</li><li>Brave</li></ul>"
+    - item: "Size Category"
+      value: "Tiny"
+    - item: "Lifespan"
+      value: "130 years"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li><li>Feywild</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Sprite** (/' *spɹaɪt* /, Scripts) are a tiny race of Fairies or Fae.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Heart Sight
+As an action, you touch a creature and magically know the creature's current emotional state. If the target fails a Charisma saving throw, you also know the creature's alignment. The DC for this save is equal to 8 + your Charisma modifier + your proficiency bonus. Celestials, fiends, and undead automatically fail the saving throw.
+## Invisibility
+You can cast the invisibility spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Charisma is your spellcasting ability for this spell.
+## Tiny Fighters
+Your small stature and fighting instincts makes you hard to hit no matter what. Your Armor Class cannot be lower than 12.
+## Brave
+You have advantage on saving throws against being frightened.

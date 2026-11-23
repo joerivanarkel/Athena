@@ -1,0 +1,45 @@
+---
+title: "Satyr"
+slug: satyr
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Satyr"
+  image:
+    src: "assets/images/Satyr.jpg"
+    alt: "Satyr"
+  details:
+    - item: "Type"
+      value: "Clankin"
+    - item: "Racial Abilities"
+      value: "<ul><li>Magic Resistance</li><li>Mirthful Leaps</li><li>Reveler</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "years"
+    - item: "Average height"
+      value: "1,8m"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li><li>Feywild</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Satyr** (/' *sætɪɹ* /, Scripts), also called **fauns**, are fey creatures native to the Feywild.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Magic Resistance
+You have advantage on saving throws against spells and other magical effects.
+
+## Mirthful Leaps
+Whenever you make a long or high jump, you can roll a d8 and add the number to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal.
+
+## Reveler
+You have proficiency in the Performance and Persuasion skills, and you have proficiency with one musical instrument of your choice.

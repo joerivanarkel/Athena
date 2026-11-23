@@ -1,0 +1,49 @@
+---
+title: "Merfolk"
+slug: merfolk
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Merfolk"
+  image:
+    src: "assets/images/Merfolk.webp"
+    alt: "Merfolk"
+  details:
+    - item: "Type"
+      value: "Finkin"
+    - item: "Vision"
+      value: "Low Light Vision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Amphibious</li><li>Mask of the Seas</li><li>Underwater Capability</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "130 years"
+    - item: "Average height"
+      value: "2,4m"
+    - item: "Average weight"
+      value: "180kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li><li>Elemental Plane of Water</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Merfolk** (/' *mɹ̩fowk* /, Scripts) are a race of aquatic humanoids.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Amphibious
+You can breathe in both air and water.
+
+## Mask of the Seas
+While in or near the water you can attempt to hide even when you are only lightly obscured by foliage, mud clouds, stone or other natural objects and phenomena.
+
+## Underwater Capability
+Underwater combat does not impose any penalties or disadvantages on movement or weapon attacks. While underwater you have darkvision, you can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.

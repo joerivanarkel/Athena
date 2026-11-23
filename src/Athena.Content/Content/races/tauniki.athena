@@ -1,0 +1,52 @@
+---
+title: "Tau'niki"
+slug: tauniki
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Tau'niki"
+  image:
+    src: "assets/images/Tau-niki.jpg"
+    alt: "Tau'niki"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Vision"
+      value: "Blindsight"
+    - item: "Racial Abilities"
+      value: "<ul><li></li><li></li><li></li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "Human-like"
+    - item: "Average height"
+      value: "Human-like"
+    - item: "Average weight"
+      value: "Human-like"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Tau’niki** (/' *tʌuniki* /, Scripts) are an evolved race of humans with bat features.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Flight
+(feel free to nerf their flight mechanics however you see fit, but as a general thing to keep in mind, they don't have separate appendages for wings and use their main arms for flight, so anything that would hinder that would logically make sense that they cant do.)
+-On that note, my recommendations would be they cant use medium and heavy armor and have flight too (you can still have them wear light and heavy armor at the expense of their flight or however much lenient your DM would allow for, maybe something like you get half speed if you have medium armor, up to you guys really)
+-Weapons and wielding them mid-air also don't really go well together (I’d recommend using it more cinematically in that you can use your flight to gain momentum to maybe like dive bomb with dual wield daggers or something, be creative with it, just no bows and crossbows mid-air unless you’re perched. -Two-handed weapons and greatswords id say you can use flying too, but I’d definitely allow quick wielding them like dropping from flight to attack using the momentum, just not use them mid-air)
+- Their flight is also a lot less impressive as opposed to other winged races as their wings and arms are the same appendage, long-distance flight isnt something they’d be known for, rather utilizing their flight more to gain an elevation advantage and a perception advantage synergizing it with their echolocation. Their flight is more used as a glide than active travel flight, using it to gain momentum in combat and get around their enemies. That said, you lose elevation when you’re not actively flying and glide instead (glide mechanics applies)
+
+## Passive Echolocation
+You have a blindsight sense of 30 ft and an advantage on Perception checks related to hearing. (only applicable in environments with ambient environmental noise, if you’re in a place without ambient noise, active echolocation has to be used to maintain their increased perception, otherwise they’re just blind)
+
+## Active Echolocation
+Once per short rest, as an action, you can enter a state of enhanced hearing and perception. Your blindsight sense doubles in distance and you can no longer roll lower than a 10 on a Perception check. In addition, you add a 1d6 to any Perception check you make. This ability is a pseudo-concentration, in the sense it functions as a concentration and can be lost when you get disrupted, but you can still concentrate on spells normally. This lasts for 1 minute.

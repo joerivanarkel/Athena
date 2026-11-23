@@ -1,0 +1,48 @@
+---
+title: "Kenku"
+slug: kenku
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Kenku"
+  image:
+    src: "assets/images/Kenku.webp"
+    alt: "Kenku"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Vision"
+      value: "Normal"
+    - item: "Racial Abilities"
+      value: "<ul><li>Expert Forgery</li><li>Mimicry</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "60 years"
+    - item: "Average height"
+      value: "Between m and  m"
+    - item: "Average weight"
+      value: "Between kg and kg"
+    - item: "Feather color"
+      value: "<ul><li>Black</li></ul>"
+    - item: "Distinctions"
+      value: "<ul><li>Crow-like appearance</li><li>Lack of wings</li></ul>"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li></ul>"
+    - item: "Language"
+      value: "<a href=\"kenku\">Kenku Mimicry</a>"
+---
+
+**Kenku** (/' *kɛŋku* /, Scripts) are a race of crow-like humanoids
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Kenku Mimicry

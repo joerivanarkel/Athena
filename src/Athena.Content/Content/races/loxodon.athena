@@ -1,0 +1,46 @@
+---
+title: "Loxodon"
+slug: loxodon
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Loxodon"
+  image:
+    src: "assets/images/Loxodon.jpg"
+    alt: "Loxodon"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Racial Abilities"
+      value: "<ul><li>Powerful Build</li><li>Natural Armour</li><li>Trunk</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "450 years"
+    - item: "Average height"
+      value: "2.5m"
+    - item: "Average weight"
+      value: "Between 130kg and 181kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"the-rift\">The Rift</a></li></ul>"
+---
+
+**Loxodon** (/' *lɑksədən* /, Scripts), also referred to as **elephantines**, are a race of elephant-like humanoids.
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Powerful Build
+You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.
+
+## Natural Armour
+You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.
+
+## Trunk
+You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options. It can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.

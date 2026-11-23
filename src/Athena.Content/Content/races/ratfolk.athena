@@ -1,0 +1,46 @@
+---
+title: "Ratfolk"
+slug: ratfolk
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Ratfolk"
+  image:
+    src: "assets/images/Ratfolk.jpg"
+    alt: "Ratfolk"
+  details:
+    - item: "Type"
+      value: "Skinwalkers"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Keen Smell</li><li>Pack Tactics</li></ul>"
+    - item: "Size Category"
+      value: "Samll"
+    - item: "Lifespan"
+      value: "60 years"
+    - item: "Average height"
+      value: "Between 1,3m and 1,7 m"
+    - item: "Average weight"
+      value: "Between 31kg and 80kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li></ul>"
+---
+
+**Ratfolk** (/' *ɹætfowk* /, Scripts) are a race of skinwalkers with a mix of human and ratlike features.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Keen Smell
+You have advantage on Perception checks that rely on smell.
+
+## Pack Tactics
+You have advantage on attack rolls against a creature if at least one of your allies is within 5 ft. of the creature, and the ally isn't incapacitated.

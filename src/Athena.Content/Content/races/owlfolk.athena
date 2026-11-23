@@ -1,0 +1,49 @@
+---
+title: "Owlfolk"
+slug: owlfolk
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Owlfolk"
+  image:
+    src: "assets/images/Owlfolk.jpg"
+    alt: "Owlfolk"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li></li><li></li><li>Magic Sight</li></ul>"
+    - item: "Size Category"
+      value: "Medium/Small"
+    - item: "Lifespan"
+      value: "years"
+    - item: "Average height"
+      value: "1,8 m"
+    - item: "Average weight"
+      value: "68 kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li><li>Feywild</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Owlfolk** (/' *awlfowk* /, Scripts) are a race of owl-like humanoids
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Nimble Flight
+Thanks to your wings, you have a flying speed equal to your walking speed. When you fall, you can use your reaction to make a Dexterity saving throw (DC 10) to stop falling and fly in place until the start of your next turn.
+
+## Silent Feathers
+You have proficiency in the Stealth skill.
+
+## Magic Sight
+Your keen senses can focus to see the presence of magic. You gain the ability to cast the detect magic spell, but only as a ritual. Your spellcasting ability for this spell is your choice of Intelligence, Wisdom, or Charisma. You can also cast this spell normally with any spell slots you have.

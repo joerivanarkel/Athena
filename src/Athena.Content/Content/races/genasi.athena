@@ -1,0 +1,77 @@
+---
+title: "Genasi"
+slug: genasi
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Genasi"
+  image:
+    src: "assets/images/Genasi.webp"
+    alt: "Genasi"
+  details:
+    - item: "Type"
+      value: "Planeborn"
+    - item: "Subraces"
+      value: "<ul><li></li><li></li><li></li><li></li></ul>"
+    - item: "Vision"
+      value: "Darkvision (Fire)"
+    - item: "Racial Abilities"
+      value: "Varying per Subrace"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "120 years"
+    - item: "Average height"
+      value: "Between 1,7m and  1,8m"
+    - item: "Average weight"
+      value: "Between 58kg and 102kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li><li>Elemental Plane of Fire</li><li>Elemental Plane of Water</li><li>Elemental Plane of Air</li><li>Elemental Plane of Earth</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Genasi** (/' */dʒɛnˈɑːsi/* /, Scripts) are a race of planeborn humanoids with elemental power in their blood. 
+
+# Appearance
+
+# Other Planes
+
+# Subraces
+
+## Air Genasi
+
+### Unending Breath
+You can hold your breath indefinitely while you’re not incapacitated.
+
+### Mingle with the Wind
+You can cast the Levitate spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.
+
+## Earth Genasi
+
+### Earth Walk
+You can move across difficult terrain made of earth or stone without expending extra movement.
+
+### Merge with Stone
+You can cast the Pass without Trace spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.
+
+## Fire Genasi
+
+### Fire Resistance
+You have resistance to fire damage.
+
+### Reach to the Blaze
+You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning Hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.
+
+## Water Genasi
+
+### Amphibious
+You can breathe air and water.
+
+### Acid Resistance
+You have resistance to acid damage.
+
+### Call to the Wave
+You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.

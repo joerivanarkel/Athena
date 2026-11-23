@@ -1,0 +1,50 @@
+---
+title: "Goblin"
+slug: goblin
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Goblin"
+  image:
+    src: "assets/images/Goblin.webp"
+    alt: "Goblin"
+  details:
+    - item: "Type"
+      value: "Humanoid (Goblinoid)"
+    - item: "Vision"
+      value: "Darkvision"
+    - item: "Racial Abilities"
+      value: "<ul><li>Fury of the Small</li><li>Nimble Escape</li></ul>"
+    - item: "Size Category"
+      value: "Small"
+    - item: "Lifespan"
+      value: "60 years"
+    - item: "Average height"
+      value: "Between 0,91m and  1,24m"
+    - item: "Average weight"
+      value: "Between 16kg and 19kg"
+    - item: "Skin color"
+      value: "<ul><li>Green</li></ul>"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"vianis-river-delta\">Vianis River Delta</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"himfahrum\">Himfahrum</a></li><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Goblin** (/' *ɡɑblɪn* /, Scripts) are a race of goblinoids. They are numerous and can be found in most places on [[iagoband|Iagoband]].
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Curse
+
+## Fury of the Small
+
+## Nimble Escape
+
+# Subraces

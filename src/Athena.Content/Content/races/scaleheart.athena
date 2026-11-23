@@ -1,0 +1,42 @@
+---
+title: "Scaleheart"
+slug: scaleheart
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Scaleheart"
+  image:
+    src: "assets/images/Scaleheart.jpg"
+    alt: "Scaleheart"
+  details:
+    - item: "Type"
+      value: "Skinwlaker"
+    - item: "Racial Abilities"
+      value: "<ul><li>Suit of Scales</li><li>Ten-Thousand Pound Bite</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "200-500 years"
+    - item: "Average height"
+      value: "Between 1,7m and  2m"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"siiter\">Siiter</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li></ul>"
+---
+
+**Scaleheart** (/' *skejlhɑɹt* /, Scripts) are a race of skinwalkers with a mix of human and crocodile-like features.
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Suit of Scales
+You gain a swim speed of 30 ft. You have advantage on Dexterity (Stealth) checks while motionless in a body of water at least two feet deep.
+
+## Ten-Thousand Pound Bite
+For the purposes of grappling, you count as one size category larger. You can use your mouth to grapple. While you have a creature grappled in your mouth, you cannot perform the verbal components of spells. You can deal bludgeoning damage equal to your strength modifier at the start of your turn against one target you are grappling in your mouth.

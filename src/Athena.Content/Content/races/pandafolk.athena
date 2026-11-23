@@ -1,0 +1,44 @@
+---
+title: "Pandafolk"
+slug: pandafolk
+category: races
+generated: obsidian-import
+tags: [race, races]
+
+infobox:
+  title: "Pandafolk"
+  image:
+    src: "assets/images/Pandafolk.jpg"
+    alt: "Pandafolk"
+  details:
+    - item: "Type"
+      value: "Skinwalker"
+    - item: "Racial Abilities"
+      value: "<ul><li>Steady Gait</li><li>Chi Pulse</li></ul>"
+    - item: "Size Category"
+      value: "Medium"
+    - item: "Lifespan"
+      value: "250 years"
+    - item: "Average height"
+      value: "Between 2,1m and  2,4m"
+    - item: "Average weight"
+      value: "Between 122kg and 144kg"
+    - item: "Planes"
+      value: "<ul><li>Material Plane (<a href=\"iagoband\">Iagoband</a>)</li></ul>"
+    - item: "Locations"
+      value: "<ul><li> <a href=\"ukrasha\">Ukrasha</a></li><li> <a href=\"xoseon-steppes\">Xoseon Steppes</a></li><li> <a href=\"kiseryn\">Kiseryn</a></li><li> <a href=\"praetia\">Praetia</a></li><li> <a href=\"rastreshan\">Rastreshan</a></li><li> <a href=\"the-rift\">The Rift</a></li><li> <a href=\"khegh-yaen\">Khegh Yaen</a></li><li> <a href=\"naanuath-empire\">Naanuath Empire</a></li><li> <a href=\"lairebais\">Lairebais</a></li><li> <a href=\"siiter\">Siiter</a></li></ul>"
+---
+
+**Pandafolk** (/' *pændəfowk* /, Scripts) General Description
+
+# Appearance
+
+# Other Planes
+
+# Powers and Abilities 
+
+## Steady Gait
+Your stride cannot be interrupted or hastened. You are immune to effects that would alter your speed. Spells like haste or slow no longer change your movement speed. But you will still gain the other benefits or detriments of the spells. Feats and class features can still give you extra movement speed.
+
+## Chi Pulse
+Using your attunement to your chi, you can heal yourself when in a pinch. As a bonus action, you can expend a hit dice to regain hit points. You must finish a short or long rest before using this trait again.
