@@ -24,12 +24,18 @@ Console.WriteLine($"  base href : {baseHref}");
 // ── Load content ────────────────────────────────────────────────────────────
 var content = new ContentService(contentDir);
 Console.WriteLine($"  articles  : {content.All.Count}");
+if (content.FailedCount > 0)
+{
+    Console.Error.WriteLine($"  {content.FailedCount} article(s) failed to parse; aborting.");
+    return 1;
+}
 
 // ── Run pipeline ───────────────────────────────────────────────────────────
 var pipeline = new SsgPipeline(content, outputDir, baseHref);
 await pipeline.RunAsync(assetsDir);
 
 Console.WriteLine($"  elapsed   : {sw.ElapsedMilliseconds} ms");
+return 0;
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 static string? Arg(string name, string[] args)
